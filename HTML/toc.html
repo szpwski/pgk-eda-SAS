@@ -1,0 +1,1820 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="charset=utf-8">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.aftercaption
+{
+  background-color: #111111;
+  border: 0px solid #4D4D4D;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-left: 2.5pt;
+  padding-right: 2.5pt;
+  padding-top: 0px;
+}
+.batch
+{
+  background-color: #333333;
+  border: 1.5pt solid #666666;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  color: #CCCCCC;
+  font-family: 'Courier New', 'courier new', monospace;
+  font-size: 8pt;
+  padding: 2.5pt;
+}
+.beforecaption
+{
+  background-color: #111111;
+  border: 0px solid #4D4D4D;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-left: 2.5pt;
+  padding-right: 2.5pt;
+  padding-top: 0px;
+}
+.body
+{
+  background-color: #111111;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.bodydate
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.bycontentfolder
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.byline
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.bylinecontainer
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.caption
+{
+  background-color: #111111;
+  border: 1pt solid #4D4D4D;
+  color: #FFFFFF;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  padding: 2.5pt;
+}
+.cell
+{
+  background-color: #111111;
+  border: 1pt solid #4D4D4D;
+  color: #FFFFFF;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  padding: 2.5pt;
+}
+.container
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.contentfolder
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.contentitem
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.contentproclabel
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.contentprocname
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.contents
+{
+  background-color: #333333;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.contentsdate
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.contenttitle
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.continued
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.data
+{
+  background-color: #111111;
+  border: 1pt solid #4D4D4D;
+  color: #FFFFFF;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  padding: 2.5pt;
+}
+.dataemphasis
+{
+  background-color: #111111;
+  border: 1pt solid #4D4D4D;
+  color: #FFFFFF;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  padding: 2.5pt;
+}
+.dataemphasisfixed
+{
+  background-color: #111111;
+  border: 1pt solid #4D4D4D;
+  color: #FFFFFF;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  padding: 2.5pt;
+}
+.dataempty
+{
+  background-color: #111111;
+  border: 1pt solid #4D4D4D;
+  color: #FFFFFF;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  padding: 2.5pt;
+}
+.datafixed
+{
+  background-color: #111111;
+  border: 1pt solid #4D4D4D;
+  color: #FFFFFF;
+  font-family: 'Courier New', 'courier new', monospace;
+  font-size: 8pt;
+  padding: 2.5pt;
+}
+.datastrong
+{
+  background-color: #111111;
+  border: 1pt solid #4D4D4D;
+  color: #FFFFFF;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  padding: 2.5pt;
+}
+.datastrongfixed
+{
+  background-color: #111111;
+  border: 1pt solid #4D4D4D;
+  color: #FFFFFF;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  padding: 2.5pt;
+}
+.document
+{
+  background-color: #111111;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+a:link {
+color:#EEEEEE
+}
+a:visited {
+color:#EEEEEE
+}
+a:active {
+color:#EEEEEE
+}
+.errorbanner
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: bold;
+}
+.errorcontent
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.errorcontentfixed
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.extendedpage
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.fatalbanner
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.fatalcontentfixed
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.folderaction
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.footer
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.footeremphasis
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.footeremphasisfixed
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.footerempty
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.footerfixed
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.footerstrong
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.footerstrongfixed
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.frame
+{
+  background-color: #111111;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.graph
+{
+  border: 1px solid #666666;
+  border-collapse: collapse;
+  border-spacing: 1px;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.header
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.headeremphasis
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.headeremphasisfixed
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.headerempty
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.headerfixed
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.headersandfooters
+{
+  background-color: #111111;
+  border: 1pt solid #4D4D4D;
+  color: #FFFFFF;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  padding: 2.5pt;
+}
+.headerstrong
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.headerstrongfixed
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.indexaction
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.linecontent
+{
+  background-color: #111111;
+  border: 1pt solid #4D4D4D;
+  color: #FFFFFF;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  padding: 2.5pt;
+}
+.list
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.list10
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.list2
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.list3
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.list4
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.list5
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.list6
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.list7
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.list8
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.list9
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.listitem
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.listitem10
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.listitem2
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.listitem3
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.listitem4
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.listitem5
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.listitem6
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.listitem7
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.listitem8
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.listitem9
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.notebanner
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: bold;
+}
+.notecontent
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.notecontentfixed
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.output
+{
+  border: 1.5pt solid #666666;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.pagebreak
+{
+  height: 1em;
+}
+.pageno
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.pages
+{
+  background-color: #333333;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.pagesdate
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.pagesitem
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.pagesproclabel
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.pagesprocname
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.pagestitle
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.paragraph
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.parskip
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.prepage
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.proctitle
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.proctitlefixed
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.rowfooter
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.rowfooteremphasis
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.rowfooterempty
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.rowfooterfixed
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.rowfooterstrong
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.rowfooterstrongfixed
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.rowheader
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.rowheaderemphasis
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.rowheaderempty
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.rowheaderfixed
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.rowheaderstrong
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.rowheaderstrongfixed
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.systemfooter
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemfooter10
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemfooter2
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemfooter3
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemfooter4
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemfooter5
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemfooter6
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemfooter7
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemfooter8
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemfooter9
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemtitle
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemtitle10
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemtitle2
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemtitle3
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemtitle4
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemtitle5
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemtitle6
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemtitle7
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemtitle8
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemtitle9
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systitleandfootercontainer
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.table
+{
+  border: 1.5pt solid #666666;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.usertext
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.warnbanner
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: bold;
+}
+.warncontent
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.warncontentfixed
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+var defaultlevel = -1;
+var openimage = 'folderopen.gif';
+var closeimage = 'folderclosed.gif';
+
+var initialized = false;
+var expanded = false;
+
+// Check for DOM support
+var DOMsupport = false;
+if (document.getElementById && 
+    document.createTextNode && 
+    document.createElement)
+    DOMsupport = true;
+
+function getAllLists()
+//
+// Get a list of all lists in the document
+// 
+{
+    var lists = new Array();
+    var uls = document.getElementsByTagName('UL');
+    for (var i = 0; i < uls.length; i++)
+        lists[lists.length] = uls[i];
+    var ols = document.getElementsByTagName('OL');
+    for (var i = 0; i < ols.length; i++)
+        lists[lists.length] = ols[i];
+    return lists;
+}
+
+function getAllListItems()
+//
+// Get a list of all list items in the document
+//
+{
+    return document.getElementsByTagName('LI');
+}
+
+function expandCollapse()
+{
+    if ( expanded ) collapseAll();
+    else expandAll();
+}
+
+function collapseAll()
+//
+// Collapse all lists down to 'level' 
+//
+{
+    initAll(null, false);
+    expanded = false;
+}
+
+function expandAll(level)
+//
+// Expand all lists up to 'level' 
+//
+{
+    initAll(level, true);
+    expanded = true;
+}
+
+function initAll(level, visible)
+//
+// Expand/collapse all lists up to 'level' 
+//
+{
+    if ( !DOMsupport ) return;
+
+    // Initialize list elements to their starting behavior
+    if ( !initialized ) 
+    {
+        initialized = true;
+
+        // Set onclick events for all items with nested lists
+        var items = getAllListItems();
+        for (var i = 0; i < items.length; i++)
+        {
+            var elem = items[i];
+            if ( elem.getElementsByTagName('UL') ||
+                 elem.getElementsByTagName('OL') )
+            {
+                elem.onclick = toggleView;
+                elem.style.cursor = 'pointer';
+            }
+        }
+
+        collapseAll();
+    }
+
+    // If level is undefined or less than zero, expand everything
+    if ( !level || level < 0 ) 
+        level = -1;
+
+    var lists = getAllLists();
+
+    for (var i=0; i < lists.length; i++)
+    {
+        nesting = getNestingLevel(lists[i]);
+        if ( nesting == 0 && visible == false )
+            continue;
+        if ( level == -1 || nesting < level )
+        {
+            setDisplay(lists[i], visible);
+
+            var li = lists[i].parentNode;
+            while ( li && li.nodeName != 'LI' )
+                li = li.parentNode;
+            if ( li ) setImage(li, visible);
+        }
+    }
+}
+
+function setDisplay(elem, visible)
+{
+    var display = (visible) ? 'block' : 'none';
+    elem.style.display = display;
+}
+
+function setImage(elem, visible)
+{
+    if ( !openimage || !closeimage ) return;
+
+    var images = elem.getElementsByTagName('IMG');
+    
+    if ( !images.length ) return;
+
+    var image = images[0];
+
+    image.src = ( visible ) ? openimage : closeimage;
+}
+
+function toggleView(e)
+//
+// If the children of this item are hidden, display them.
+// If they are displayed, hide them.
+//
+{
+    var elem = (window.event) ? window.event.srcElement : e.target;
+
+    while ( elem && elem.nodeName != 'LI' )
+        elem = elem.parentNode;
+
+    if ( !elem ) return;
+
+    var children = elem.childNodes;
+
+    for (var i = 0; i < children.length; i++)
+    {
+        c = children[i];
+        if ( c.nodeName != 'UL' && c.nodeName != 'OL' ) continue;
+        if ( !c.style ) continue;
+        setImage(elem, (c.style.display != 'block'));
+        setDisplay(c, (c.style.display != 'block'));
+    }
+
+    if (window.event) window.event.cancelBubble = true;
+    else if (e.stopPropagation) e.stopPropagation();
+
+    return true;
+}
+
+function getNestingLevel(elem)
+//
+// Get the nesting level of the given list
+//
+{
+    var parent = elem.parentNode;
+    var level = 0;
+    while ( parent && parent.nodeName != 'BODY' )
+    { 
+        if ( parent.nodeName == 'UL' || 
+             parent.nodeName == 'OL' )
+            level++;
+        parent = parent.parentNode;
+    }
+    return level;
+}
+
+function _getElementsByClassName(name)
+//
+// DOM method that gets a list of elements by class name
+//
+{
+    var elems = document.getElementsByTagName('*');
+    var retvalue = new Array();
+    var i, j;
+
+    for (i = 0, j = 0; i < elems.length; i++)
+    {
+        var c = ' ' + elems[i].className + ' ';
+        if (c.indexOf(' ' + name + ' ') != -1)
+            retvalue[j++] = elems[i];
+    }
+    return retvalue;
+}
+
+document.getElementsByClassName = _getElementsByClassName;
+
+function setup() 
+//
+// Onload event method to setup all initial parameters 
+//
+{ 
+    if ( initialized ) return;
+    if ( !document.getElementsByTagName('body')[0].hasAttribute('onload') )
+        expandAll(defaultlevel); 
+}
+
+// Setup onload and onclick events
+if ( DOMsupport )
+{
+    if ( window.addEventListener )
+        window.addEventListener('load', setup, false);
+    else
+        window.onload = setup;
+}
+
+//-->
+</script>
+</head>
+<body class="contents">
+<span class="contenttitle"></span><ol>
+<li class="contentproclabel">
+Wstępne zbadanie zbioru PGK 2016<ul class="contentproclabel">
+<li class="contentfolder">
+PROJEKT.PGK_2016<ul class="contentfolder">
+<li class="contentitem">
+<a href="body.html#IDX">Atrybuty</a>
+<br/></li>
+<li class="contentitem">
+<a href="body.html#IDX1">Mechanizm/system op.</a>
+<br/></li>
+<li class="contentitem">
+<a href="body.html#IDX2">Zmienne</a>
+<br/></li>
+</ul>
+<br/></li>
+</ul>
+<br/></li>
+<li class="contentproclabel">
+Wyświetlenie pierwszych i ostatnich 10 obserwacji z 2016<ul class="contentproclabel">
+<li class="contentitem">
+<a href="body.html#IDX3">Zbiór WORK.FIRST10_LAST10</a>
+<br/></li>
+</ul>
+<br/></li>
+<li class="contentproclabel">
+Sprawdzenie ilości braków danych z 2016<ul class="contentproclabel">
+<li class="contentitem">
+<a href="body.html#IDX4">Statystyki sumaryczne</a>
+<br/></li>
+</ul>
+<br/></li>
+<li class="contentproclabel">
+Ponowne badanie ilości braków danych z 2016<ul class="contentproclabel">
+<li class="contentitem">
+<a href="body.html#IDX5">Statystyki sumaryczne</a>
+<br/></li>
+</ul>
+<br/></li>
+<li class="contentproclabel">
+Wstępne zbadanie zbioru PGK 2017<ul class="contentproclabel">
+<li class="contentfolder">
+PROJEKT.PGK_2017<ul class="contentfolder">
+<li class="contentitem">
+<a href="body.html#IDX6">Atrybuty</a>
+<br/></li>
+<li class="contentitem">
+<a href="body.html#IDX7">Mechanizm/system op.</a>
+<br/></li>
+<li class="contentitem">
+<a href="body.html#IDX8">Zmienne</a>
+<br/></li>
+</ul>
+<br/></li>
+</ul>
+<br/></li>
+<li class="contentproclabel">
+Wyświetlenie pierwszych i ostatnich 10 obserwacji z 2017<ul class="contentproclabel">
+<li class="contentitem">
+<a href="body.html#IDX9">Zbiór WORK.FIRST10_LAST10</a>
+<br/></li>
+</ul>
+<br/></li>
+<li class="contentproclabel">
+Sprawdzenie ilości braków danych z 2017<ul class="contentproclabel">
+<li class="contentitem">
+<a href="body.html#IDX10">Statystyki sumaryczne</a>
+<br/></li>
+</ul>
+<br/></li>
+<li class="contentproclabel">
+Ponowne badanie ilości braków danych z 2017<ul class="contentproclabel">
+<li class="contentitem">
+<a href="body.html#IDX11">Statystyki sumaryczne</a>
+<br/></li>
+</ul>
+<br/></li>
+<li class="contentproclabel">
+Wstępne zbadanie zbioru PGK 2018<ul class="contentproclabel">
+<li class="contentfolder">
+PROJEKT.PGK_2018<ul class="contentfolder">
+<li class="contentitem">
+<a href="body.html#IDX12">Atrybuty</a>
+<br/></li>
+<li class="contentitem">
+<a href="body.html#IDX13">Mechanizm/system op.</a>
+<br/></li>
+<li class="contentitem">
+<a href="body.html#IDX14">Zmienne</a>
+<br/></li>
+</ul>
+<br/></li>
+</ul>
+<br/></li>
+<li class="contentproclabel">
+Sprawdzenie ilości braków danych z 2018<ul class="contentproclabel">
+<li class="contentitem">
+<a href="body.html#IDX15">Zbiór WORK.FIRST10_LAST10</a>
+<br/></li>
+</ul>
+<br/></li>
+<li class="contentproclabel">
+Sprawdzenie ilości braków danych z 2018<ul class="contentproclabel">
+<li class="contentitem">
+<a href="body.html#IDX16">Statystyki sumaryczne</a>
+<br/></li>
+</ul>
+<br/></li>
+<li class="contentproclabel">
+Ponowne sprawdzenie braków danych z 2018<ul class="contentproclabel">
+<li class="contentitem">
+<a href="body.html#IDX17">Statystyki sumaryczne</a>
+<br/></li>
+</ul>
+<br/></li>
+<li class="contentproclabel">
+Najczęściej występowane grupy kapitałowe<ul class="contentproclabel">
+<li class="contentfolder">
+Tabela PODATNIK<ul class="contentfolder">
+<li class="contentitem">
+<a href="body.html#IDX18">Jednoczynnikowe liczebności</a>
+<br/></li>
+</ul>
+<br/></li>
+</ul>
+<br/></li>
+<li class="contentproclabel">
+Struktura występowania grup kapitałowych<ul class="contentproclabel">
+<li class="contentitem">
+<a href="body.html#IDX19">Procedura SGPLOT</a>
+<br/></li>
+</ul>
+<br/></li>
+<li class="contentproclabel">
+Spis najczęściej występowanych grup kapitałowych<ul class="contentproclabel">
+<li class="contentitem">
+<a href="body.html#IDX20">Zbiór PROJEKT.CZESTE_SPOLKI_INFO</a>
+<br/></li>
+</ul>
+<br/></li>
+<li class="contentproclabel">
+Badanie dominującej ilości występowania<ul class="contentproclabel">
+<li class="contentitem">
+<a href="body.html#IDX21">Procedura SGPLOT</a>
+<br/></li>
+</ul>
+<br/></li>
+<li class="contentproclabel">
+Rozłożenie wysokości kwot podatku dochodowego w zależności od częstości<ul class="contentproclabel">
+<li class="contentitem">
+<a href="body.html#IDX22">Procedura SGPLOT</a>
+<br/></li>
+</ul>
+<br/></li>
+<li class="contentproclabel">
+Przychody, dochody i straty - histogram<ul class="contentproclabel">
+<li class="contentitem">
+<a href="body.html#IDX23">Procedura SGPLOT</a>
+<br/></li>
+</ul>
+<br/></li>
+<li class="contentproclabel">
+Zbiór 3 spółek o największych: dochod w roku: 2016<ul class="contentproclabel">
+<li class="contentitem">
+<a href="body.html#IDX24">Zbiór PROJEKT.TOP3_DOCHOD2016</a>
+<br/></li>
+</ul>
+<br/></li>
+<li class="contentproclabel">
+Przedstawienie 3 spółek o największych: dochod w roku: 2016<ul class="contentproclabel">
+<li class="contentitem">
+<a href="body.html#IDX25">Procedura SGPLOT</a>
+<br/></li>
+</ul>
+<br/></li>
+<li class="contentproclabel">
+Zbiór 3 spółek o najniższych: dochod w roku: 2016<ul class="contentproclabel">
+<li class="contentitem">
+<a href="body.html#IDX26">Zbiór PROJEKT.LAST3_DOCHOD2016</a>
+<br/></li>
+</ul>
+<br/></li>
+<li class="contentproclabel">
+Przedstawienie 3 spółek o najniższych: dochod w roku: 2016<ul class="contentproclabel">
+<li class="contentitem">
+<a href="body.html#IDX27">Procedura SGPLOT</a>
+<br/></li>
+</ul>
+<br/></li>
+<li class="contentproclabel">
+Zbiór 3 spółek o największych: dochod w roku: 2017<ul class="contentproclabel">
+<li class="contentitem">
+<a href="body.html#IDX28">Zbiór PROJEKT.TOP3_DOCHOD2017</a>
+<br/></li>
+</ul>
+<br/></li>
+<li class="contentproclabel">
+Przedstawienie 3 spółek o największych: dochod w roku: 2017<ul class="contentproclabel">
+<li class="contentitem">
+<a href="body.html#IDX29">Procedura SGPLOT</a>
+<br/></li>
+</ul>
+<br/></li>
+<li class="contentproclabel">
+Zbiór 3 spółek o najniższych: dochod w roku: 2017<ul class="contentproclabel">
+<li class="contentitem">
+<a href="body.html#IDX30">Zbiór PROJEKT.LAST3_DOCHOD2017</a>
+<br/></li>
+</ul>
+<br/></li>
+<li class="contentproclabel">
+Przedstawienie 3 spółek o najniższych: dochod w roku: 2017<ul class="contentproclabel">
+<li class="contentitem">
+<a href="body.html#IDX31">Procedura SGPLOT</a>
+<br/></li>
+</ul>
+<br/></li>
+<li class="contentproclabel">
+Zbiór 3 spółek o największych: dochod w roku: 2018<ul class="contentproclabel">
+<li class="contentitem">
+<a href="body.html#IDX32">Zbiór PROJEKT.TOP3_DOCHOD2018</a>
+<br/></li>
+</ul>
+<br/></li>
+<li class="contentproclabel">
+Przedstawienie 3 spółek o największych: dochod w roku: 2018<ul class="contentproclabel">
+<li class="contentitem">
+<a href="body.html#IDX33">Procedura SGPLOT</a>
+<br/></li>
+</ul>
+<br/></li>
+<li class="contentproclabel">
+Zbiór 3 spółek o najniższych: dochod w roku: 2018<ul class="contentproclabel">
+<li class="contentitem">
+<a href="body.html#IDX34">Zbiór PROJEKT.LAST3_DOCHOD2018</a>
+<br/></li>
+</ul>
+<br/></li>
+<li class="contentproclabel">
+Przedstawienie 3 spółek o najniższych: dochod w roku: 2018<ul class="contentproclabel">
+<li class="contentitem">
+<a href="body.html#IDX35">Procedura SGPLOT</a>
+<br/></li>
+</ul>
+<br/></li>
+<li class="contentproclabel">
+Dane wyliczone dla poszczególnych czynników<ul class="contentproclabel">
+<li class="contentitem">
+<a href="body.html#IDX36">Zbiór PROJEKT.SREDNIE_DANE_T</a>
+<br/></li>
+</ul>
+<br/></li>
+<li class="contentproclabel">
+Przedstawienie zmiany: przychody w latach 2016-2018<ul class="contentproclabel">
+<li class="contentitem">
+<a href="body.html#IDX37">Procedura SGPLOT</a>
+<br/></li>
+</ul>
+<br/></li>
+</ol>
+</body>
+</html>

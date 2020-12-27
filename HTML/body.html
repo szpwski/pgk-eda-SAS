@@ -1,0 +1,6373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="charset=utf-8">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.aftercaption
+{
+  background-color: #111111;
+  border: 0px solid #4D4D4D;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-left: 2.5pt;
+  padding-right: 2.5pt;
+  padding-top: 0px;
+}
+.batch
+{
+  background-color: #333333;
+  border: 1.5pt solid #666666;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  color: #CCCCCC;
+  font-family: 'Courier New', 'courier new', monospace;
+  font-size: 8pt;
+  padding: 2.5pt;
+}
+.beforecaption
+{
+  background-color: #111111;
+  border: 0px solid #4D4D4D;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-left: 2.5pt;
+  padding-right: 2.5pt;
+  padding-top: 0px;
+}
+.body
+{
+  background-color: #111111;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.bodydate
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.bycontentfolder
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.byline
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.bylinecontainer
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.caption
+{
+  background-color: #111111;
+  border: 1pt solid #4D4D4D;
+  color: #FFFFFF;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  padding: 2.5pt;
+}
+.cell
+{
+  background-color: #111111;
+  border: 1pt solid #4D4D4D;
+  color: #FFFFFF;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  padding: 2.5pt;
+}
+.container
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.contentfolder
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.contentitem
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.contentproclabel
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.contentprocname
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.contents
+{
+  background-color: #333333;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.contentsdate
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.contenttitle
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.continued
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.data
+{
+  background-color: #111111;
+  border: 1pt solid #4D4D4D;
+  color: #FFFFFF;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  padding: 2.5pt;
+}
+.dataemphasis
+{
+  background-color: #111111;
+  border: 1pt solid #4D4D4D;
+  color: #FFFFFF;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  padding: 2.5pt;
+}
+.dataemphasisfixed
+{
+  background-color: #111111;
+  border: 1pt solid #4D4D4D;
+  color: #FFFFFF;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  padding: 2.5pt;
+}
+.dataempty
+{
+  background-color: #111111;
+  border: 1pt solid #4D4D4D;
+  color: #FFFFFF;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  padding: 2.5pt;
+}
+.datafixed
+{
+  background-color: #111111;
+  border: 1pt solid #4D4D4D;
+  color: #FFFFFF;
+  font-family: 'Courier New', 'courier new', monospace;
+  font-size: 8pt;
+  padding: 2.5pt;
+}
+.datastrong
+{
+  background-color: #111111;
+  border: 1pt solid #4D4D4D;
+  color: #FFFFFF;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  padding: 2.5pt;
+}
+.datastrongfixed
+{
+  background-color: #111111;
+  border: 1pt solid #4D4D4D;
+  color: #FFFFFF;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  padding: 2.5pt;
+}
+.document
+{
+  background-color: #111111;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+a:link {
+color:#EEEEEE
+}
+a:visited {
+color:#EEEEEE
+}
+a:active {
+color:#EEEEEE
+}
+.errorbanner
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: bold;
+}
+.errorcontent
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.errorcontentfixed
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.extendedpage
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.fatalbanner
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.fatalcontentfixed
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.folderaction
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.footer
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.footeremphasis
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.footeremphasisfixed
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.footerempty
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.footerfixed
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.footerstrong
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.footerstrongfixed
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.frame
+{
+  background-color: #111111;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.graph
+{
+  border: 1px solid #666666;
+  border-collapse: collapse;
+  border-spacing: 1px;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.header
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.headeremphasis
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.headeremphasisfixed
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.headerempty
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.headerfixed
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.headersandfooters
+{
+  background-color: #111111;
+  border: 1pt solid #4D4D4D;
+  color: #FFFFFF;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  padding: 2.5pt;
+}
+.headerstrong
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.headerstrongfixed
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.indexaction
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.linecontent
+{
+  background-color: #111111;
+  border: 1pt solid #4D4D4D;
+  color: #FFFFFF;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  padding: 2.5pt;
+}
+.list
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.list10
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.list2
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.list3
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.list4
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.list5
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.list6
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.list7
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.list8
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.list9
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.listitem
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.listitem10
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.listitem2
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.listitem3
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.listitem4
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.listitem5
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.listitem6
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.listitem7
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.listitem8
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.listitem9
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.notebanner
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: bold;
+}
+.notecontent
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.notecontentfixed
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.output
+{
+  border: 1.5pt solid #666666;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.pagebreak
+{
+  height: 1em;
+}
+.pageno
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.pages
+{
+  background-color: #333333;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.pagesdate
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.pagesitem
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.pagesproclabel
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.pagesprocname
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.pagestitle
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.paragraph
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.parskip
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.prepage
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.proctitle
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.proctitlefixed
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.rowfooter
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.rowfooteremphasis
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.rowfooterempty
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.rowfooterfixed
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.rowfooterstrong
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.rowfooterstrongfixed
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.rowheader
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.rowheaderemphasis
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.rowheaderempty
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.rowheaderfixed
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.rowheaderstrong
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.rowheaderstrongfixed
+{
+  background-color: #333333;
+  background-image: linear-gradient(top, #4D4D4D, #333333);
+  background-image: -webkit-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -moz-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -o-linear-gradient(top, #4D4D4D, #333333);
+  background-image: -ms-linear-gradient(top, #4D4D4D, #333333);
+  border: 1pt solid #4D4D4D;
+  color: #CCCCCC;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4D4D4D", endColorstr="#333333");
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: normal;
+  padding: 2.5pt;
+  text-align: center;
+  vertical-align: middle;
+}
+.systemfooter
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemfooter10
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemfooter2
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemfooter3
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemfooter4
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemfooter5
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemfooter6
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemfooter7
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemfooter8
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemfooter9
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemtitle
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemtitle10
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemtitle2
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemtitle3
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemtitle4
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemtitle5
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemtitle6
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemtitle7
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemtitle8
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systemtitle9
+{
+  border: 0px solid #000000;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.systitleandfootercontainer
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.table
+{
+  border: 1.5pt solid #666666;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.usertext
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.warnbanner
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: bold;
+}
+.warncontent
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.warncontentfixed
+{
+  color: #EEEEEE;
+  font-family: Arial, arial, helvetica, sans-serif;
+  font-size: 8pt;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<a name="IDX"></a>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">PROJEKT SAS - analiza zeznań podatkowych grup kapitałowych w latach 2016-2018.</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">Projekt przygotowany na zajęcia z programowania SAS.</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">Celem projektu jest dokonanie analizy i wizualizacji danych.</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">Odpowiemy na 4 postawione przez siebie pytania:</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">1) Które grupy kapitałowe złożyły zeznania podatkowe więcej niż raz na przestrzeni 3 lat?</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">2) Jak wygląda rozłożenie wysokości kwot podatku należnego zależnie od częstości występowania spółek?</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">3) Jaką część procentowo zajmują przychody, dochody i straty w poszczególnych przedziałach kwotowych?</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">4) Jakie spółki osiągają największy dochód, a jakie najmniejszy?</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">5) Ile wynoszą dane szczegółowe przychodów, dochodów i strat w poszczególnych latach (min, max, średnia, odchylenie)?</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">Rozpoczniemy od importu zbiorów i przeanalizowaniu ich struktury oraz przygotowaniu pod analizę.</td>
+</tr>
+</table>
+<div class="branch">
+<div>
+<div align="center">
+<table class="table" cellspacing="0" border="2" bordercolor="#666666" summary="Procedure Contents: Atrybuty">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l m rowheader" scope="row">Nazwa zbioru</th>
+<td class="l data">PROJEKT.PGK_2016</td>
+<th class="l m rowheader" scope="row">Obserwacje</th>
+<td class="l data">59</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Typ elementu</th>
+<td class="l data">DATA</td>
+<th class="l m rowheader" scope="row">Zmienne</th>
+<td class="l data">11</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Mechanizm</th>
+<td class="l data">V9</td>
+<th class="l m rowheader" scope="row">Indeksy</th>
+<td class="l data">0</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Utworzono</th>
+<td class="l data">10.06.2020 18:53:51</td>
+<th class="l m rowheader" scope="row">Długość obserwacji</th>
+<td class="l data">200</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Ostatnio zmodyfikowano</th>
+<td class="l data">10.06.2020 18:53:51</td>
+<th class="l m rowheader" scope="row">Usuniętych obserwacji</th>
+<td class="l data">0</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Zabezpieczenie</th>
+<td class="l data">&nbsp;</td>
+<th class="l m rowheader" scope="row">Skompresowany</th>
+<td class="l data">Nie</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Typ zbioru</th>
+<td class="l data">&nbsp;</td>
+<th class="l m rowheader" scope="row">Posortowany</th>
+<td class="l data">Nie</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Etykieta</th>
+<td class="l data">&nbsp;</td>
+<th class="l m rowheader" scope="row">&nbsp;</th>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Reprezentacja danych</th>
+<td class="l data">SOLARIS_X86_64, LINUX_X86_64, ALPHA_TRU64, LINUX_IA64</td>
+<th class="l m rowheader" scope="row">&nbsp;</th>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Kodowanie</th>
+<td class="l data">utf-8  Unicode (UTF-8)</td>
+<th class="l m rowheader" scope="row">&nbsp;</th>
+<td class="l data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX1"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" border="2" bordercolor="#666666" summary="Procedure Contents: Mechanizm/system op.">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" colspan="2" scope="colgroup">Informacje zależne od mechanizmu/platformy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l m rowheader" scope="row">Rozmiar strony zbioru</th>
+<td class="l data">65536</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Liczba stron zbioru</th>
+<td class="l data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Pierwsza strona</th>
+<td class="l data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Maksymalnie obserwacji na stronie</th>
+<td class="l data">327</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Obserwacji na pierwszej stronie</th>
+<td class="l data">59</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Liczba napraw zbioru</th>
+<td class="l data">0</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Nazwa pliku</th>
+<td class="l data">/folders/myfolders/PROJEKT/LIBRARY/pgk_2016.sas7bdat</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Utworzono w dystrybucji</th>
+<td class="l data">9.0401M6</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Utworzono na platformie</th>
+<td class="l data">Linux</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Numer INODE</th>
+<td class="l data">267</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Prawa dostępu</th>
+<td class="l data">rwxrwx---</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Właściciel</th>
+<td class="l data">root</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Rozmiar pliku</th>
+<td class="l data">128KB</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Rozmiar pliku (w bajtach)</th>
+<td class="l data">131072</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX2"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" border="2" bordercolor="#666666" summary="Procedure Contents: Zmienne">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" colspan="7" scope="colgroup">Alfabetyczna lista zmiennych i atrybutów</th>
+</tr>
+<tr>
+<th class="c m header" scope="col">#</th>
+<th class="c m header" scope="col">Zmienna</th>
+<th class="c m header" scope="col">Typ</th>
+<th class="c m header" scope="col">Dł.</th>
+<th class="c m header" scope="col">Format</th>
+<th class="c m header" scope="col">Informat</th>
+<th class="c m header" scope="col">Etykieta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="c m rowheader" scope="row">1</th>
+<td class="l data">A</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">BEST.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">A</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">2</th>
+<td class="l data">B</td>
+<td class="l data">Char</td>
+<td class="r data">114</td>
+<td class="l data">$114.</td>
+<td class="l data">$114.</td>
+<td class="l data">B</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">3</th>
+<td class="l data">C</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">BEST.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">C</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">4</th>
+<td class="l data">D</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">MMDDYY10.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">D</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">5</th>
+<td class="l data">E</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">MMDDYY10.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">E</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">6</th>
+<td class="l data">F</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">COMMA15.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">F</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">7</th>
+<td class="l data">G</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">COMMA15.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">G</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">8</th>
+<td class="l data">H</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">COMMA15.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">H</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">9</th>
+<td class="l data">I</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">COMMA15.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">I</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">10</th>
+<td class="l data">J</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">COMMA15.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">J</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">11</th>
+<td class="l data">K</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">COMMA15.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">K</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<a name="IDX3"></a>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Pierwsze i ostatnie 10 obserwacji z 2016</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" border="2" bordercolor="#666666" summary="Procedure Print: Zbiór WORK.FIRST10_LAST10">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" scope="col">Obs.</th>
+<th class="c m header" scope="col">nobs</th>
+<th class="c m header" scope="col">A</th>
+<th class="c m header" scope="col">B</th>
+<th class="c m header" scope="col">C</th>
+<th class="c m header" scope="col">D</th>
+<th class="c m header" scope="col">E</th>
+<th class="c m header" scope="col">F</th>
+<th class="c m header" scope="col">G</th>
+<th class="c m header" scope="col">H</th>
+<th class="c m header" scope="col">I</th>
+<th class="c m header" scope="col">J</th>
+<th class="c m header" scope="col">K</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="c m rowheader" scope="row">1</th>
+<td class="r data">59</td>
+<td class="r data">1</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA PGK PGE 2015</td>
+<td class="r data">1070031259</td>
+<td class="r data">01/01/2016</td>
+<td class="r data">12/31/2016</td>
+<td class="r data">44,983,078,713</td>
+<td class="r data">.</td>
+<td class="r data">2,123,909,367</td>
+<td class="r data">.</td>
+<td class="r data">2,077,900,443</td>
+<td class="r data">394,801,084</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">2</th>
+<td class="r data">59</td>
+<td class="r data">2</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA PGNIG</td>
+<td class="r data">1080017456</td>
+<td class="r data">01/01/2016</td>
+<td class="r data">12/31/2016</td>
+<td class="r data">38,209,630,016</td>
+<td class="r data">.</td>
+<td class="r data">3,710,313,745</td>
+<td class="r data">.</td>
+<td class="r data">3,704,907,251</td>
+<td class="r data">703,932,378</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">3</th>
+<td class="r data">59</td>
+<td class="r data">3</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA</td>
+<td class="r data">2050004308</td>
+<td class="r data">01/01/2016</td>
+<td class="r data">12/31/2016</td>
+<td class="r data">34,862,717,863</td>
+<td class="r data">.</td>
+<td class="r data">1,166,001,781</td>
+<td class="r data">.</td>
+<td class="r data">1,164,084,934</td>
+<td class="r data">221,176,137</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">4</th>
+<td class="r data">59</td>
+<td class="r data">4</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA PZU</td>
+<td class="r data">1070031851</td>
+<td class="r data">01/01/2016</td>
+<td class="r data">12/31/2016</td>
+<td class="r data">25,420,335,757</td>
+<td class="r data">.</td>
+<td class="r data">2,669,597,489</td>
+<td class="r data">.</td>
+<td class="r data">2,666,735,756</td>
+<td class="r data">506,618,450</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">5</th>
+<td class="r data">59</td>
+<td class="r data">5</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA KGHM</td>
+<td class="r data">1010007524</td>
+<td class="r data">01/01/2016</td>
+<td class="r data">12/31/2016</td>
+<td class="r data">21,550,578,919</td>
+<td class="r data">.</td>
+<td class="r data">3,865,011,606</td>
+<td class="r data">.</td>
+<td class="r data">3,903,894,649</td>
+<td class="r data">736,240,568</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">6</th>
+<td class="r data">59</td>
+<td class="r data">6</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA ENEA</td>
+<td class="r data">2090002971</td>
+<td class="r data">01/01/2016</td>
+<td class="r data">12/31/2016</td>
+<td class="r data">20,935,071,105</td>
+<td class="r data">.</td>
+<td class="r data">968,916,947</td>
+<td class="r data">.</td>
+<td class="r data">968,141,947</td>
+<td class="r data">183,946,970</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">7</th>
+<td class="r data">59</td>
+<td class="r data">7</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA ENERGA</td>
+<td class="r data">2040004755</td>
+<td class="r data">01/01/2016</td>
+<td class="r data">12/31/2016</td>
+<td class="r data">13,640,031,279</td>
+<td class="r data">.</td>
+<td class="r data">735,798,918</td>
+<td class="r data">.</td>
+<td class="r data">726,304,150</td>
+<td class="r data">137,997,789</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">8</th>
+<td class="r data">59</td>
+<td class="r data">8</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA AUCHAN</td>
+<td class="r data">1090003757</td>
+<td class="r data">05/01/2015</td>
+<td class="r data">01/27/2016</td>
+<td class="r data">9,250,650,023</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">2,449,706</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">9</th>
+<td class="r data">59</td>
+<td class="r data">9</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA IDEA BANK S.A.</td>
+<td class="r data">1080015782</td>
+<td class="r data">01/01/2016</td>
+<td class="r data">12/31/2016</td>
+<td class="r data">7,538,619,426</td>
+<td class="r data">.</td>
+<td class="r data">380,131,548</td>
+<td class="r data">.</td>
+<td class="r data">391,313,298</td>
+<td class="r data">74,349,527</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">10</th>
+<td class="r data">59</td>
+<td class="r data">10</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA - BANK MILLENNIUM SPÓŁKA AKCYJNA</td>
+<td class="r data">1080010247</td>
+<td class="r data">01/01/2016</td>
+<td class="r data">12/31/2016</td>
+<td class="r data">7,510,872,666</td>
+<td class="r data">.</td>
+<td class="r data">1,192,090,351</td>
+<td class="r data">.</td>
+<td class="r data">1,192,169,868</td>
+<td class="r data">226,512,275</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">11</th>
+<td class="r data">59</td>
+<td class="r data">50</td>
+<td class="l data">REGIONALNE CENTRUM GOSPODARKI WODNO-ŚCIEKOWEJ SPÓŁKA AKCYJNA</td>
+<td class="r data">2060002446</td>
+<td class="r data">01/01/2016</td>
+<td class="r data">12/31/2016</td>
+<td class="r data">46,625,889</td>
+<td class="r data">.</td>
+<td class="r data">4,799,694</td>
+<td class="r data">.</td>
+<td class="r data">4,670,184</td>
+<td class="r data">887,335</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">12</th>
+<td class="r data">59</td>
+<td class="r data">51</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA</td>
+<td class="r data">1070017420</td>
+<td class="r data">01/01/2016</td>
+<td class="r data">12/31/2016</td>
+<td class="r data">45,808,994</td>
+<td class="r data">.</td>
+<td class="r data">384,063</td>
+<td class="r data">0</td>
+<td class="r data">384,063</td>
+<td class="r data">72,972</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">13</th>
+<td class="r data">59</td>
+<td class="r data">52</td>
+<td class="l data">MAKRUM PROJECT MANAGEMENT SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ PODATKOWA GRUPA KAPITAŁOWA</td>
+<td class="r data">1020001115</td>
+<td class="r data">01/01/2016</td>
+<td class="r data">12/31/2016</td>
+<td class="r data">42,453,083</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">1,185,816</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">14</th>
+<td class="r data">59</td>
+<td class="r data">53</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA BIOSYSTEM</td>
+<td class="r data">6793097858</td>
+<td class="r data">04/01/2015</td>
+<td class="r data">03/31/2016</td>
+<td class="r data">42,124,172</td>
+<td class="r data">.</td>
+<td class="r data">4,099,893</td>
+<td class="r data">.</td>
+<td class="r data">4,097,730</td>
+<td class="r data">778,569</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">15</th>
+<td class="r data">59</td>
+<td class="r data">54</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA GEST-POL SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ</td>
+<td class="r data">3010000026</td>
+<td class="r data">01/01/2016</td>
+<td class="r data">12/31/2016</td>
+<td class="r data">39,705,642</td>
+<td class="r data">.</td>
+<td class="r data">8,000,722</td>
+<td class="r data">.</td>
+<td class="r data">8,000,722</td>
+<td class="r data">1,520,137</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">16</th>
+<td class="r data">59</td>
+<td class="r data">55</td>
+<td class="l data">OPERA GRUPA KAPITAŁOWA</td>
+<td class="r data">1070033198</td>
+<td class="r data">07/01/2015</td>
+<td class="r data">06/30/2016</td>
+<td class="r data">36,829,041</td>
+<td class="r data">.</td>
+<td class="r data">1,139,816</td>
+<td class="r data">.</td>
+<td class="r data">1,139,816</td>
+<td class="r data">216,565</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">17</th>
+<td class="r data">59</td>
+<td class="r data">56</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA DESA UNICUM</td>
+<td class="r data">1070034708</td>
+<td class="r data">01/01/2016</td>
+<td class="r data">12/31/2016</td>
+<td class="r data">30,705,123</td>
+<td class="r data">.</td>
+<td class="r data">7,051,670</td>
+<td class="r data">.</td>
+<td class="r data">7,051,670</td>
+<td class="r data">1,339,817</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">18</th>
+<td class="r data">59</td>
+<td class="r data">57</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA ACE SPV 1</td>
+<td class="r data">1070036601</td>
+<td class="r data">09/01/2016</td>
+<td class="r data">12/31/2016</td>
+<td class="r data">7,827,017</td>
+<td class="r data">.</td>
+<td class="r data">981,270</td>
+<td class="r data">.</td>
+<td class="r data">981,270</td>
+<td class="r data">186,441</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">19</th>
+<td class="r data">59</td>
+<td class="r data">58</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA SANWIL HOLDING</td>
+<td class="r data">1030000732</td>
+<td class="r data">01/01/2016</td>
+<td class="r data">03/31/2016</td>
+<td class="r data">434,235</td>
+<td class="r data">.</td>
+<td class="r data">86,839</td>
+<td class="r data">.</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">20</th>
+<td class="r data">59</td>
+<td class="r data">59</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA-PŁATNIK KRAKOWSKI HOLDING KOMUNALNY SPÓŁKA AKCYJNA</td>
+<td class="r data">6792584444</td>
+<td class="r data">01/01/2016</td>
+<td class="r data">12/31/2016</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">168,972,063</td>
+<td class="r data">.</td>
+<td class="r data">168,843,763</td>
+<td class="r data">32,080,315</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<a name="IDX4"></a>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Badanie ilości braków danych względem wszystkich obserwacji z 2016</td>
+</tr>
+</table><br>
+<div class="c proctitle">Procedura MEANS</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" border="2" bordercolor="#666666" summary="Procedure Means: Statystyki sumaryczne">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" scope="col">Zmienna</th>
+<th class="c m header" scope="col">Etykieta</th>
+<th class="c m header" scope="col">N</th>
+<th class="c m header" scope="col">N braków</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">A</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">C</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">D</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">E</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">F</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">G</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">H</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">I</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">J</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">K</th>
+</tr>
+</table></th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">A</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">C</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">D</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">E</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">F</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">G</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">H</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">I</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">J</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">K</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">59</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">59</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">59</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">59</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">58</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">1</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">51</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">11</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">59</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">59</td>
+</tr>
+</table></td>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">1</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">58</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">8</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">48</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0</td>
+</tr>
+</table></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<a name="IDX5"></a>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Sprawdzenie ilości braków danych względem wszystkich obserwacji z 2016</td>
+</tr>
+</table><br>
+<div class="c proctitle">Procedura MEANS</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" border="2" bordercolor="#666666" summary="Procedure Means: Statystyki sumaryczne">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" scope="col">Zmienna</th>
+<th class="c m header" scope="col">Etykieta</th>
+<th class="c m header" scope="col">N</th>
+<th class="c m header" scope="col">N braków</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">LP</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">NIP</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">POCZATEK_OKRESU</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">KONIEC_OKRESU</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">PRZYCHODY</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">KOSZTY_PRZYCHODU</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">DOCHOD</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">STRATA</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">PODSTAWA_OPODATKOWANIA</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">PODATEK_NALEZNY</th>
+</tr>
+</table></th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">A</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">C</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">D</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">E</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">F</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">G</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">H</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">I</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">J</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">K</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">59</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">59</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">59</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">59</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">59</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">59</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">59</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">59</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">59</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">59</td>
+</tr>
+</table></td>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0</td>
+</tr>
+</table></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<a name="IDX6"></a>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Wstępne zbadanie zbioru PGK_2017xlsx</td>
+</tr>
+</table><br>
+<div class="c proctitle">Procedura CONTENTS</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" border="2" bordercolor="#666666" summary="Procedure Contents: Atrybuty">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l m rowheader" scope="row">Nazwa zbioru</th>
+<td class="l data">PROJEKT.PGK_2017</td>
+<th class="l m rowheader" scope="row">Obserwacje</th>
+<td class="l data">70</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Typ elementu</th>
+<td class="l data">DATA</td>
+<th class="l m rowheader" scope="row">Zmienne</th>
+<td class="l data">11</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Mechanizm</th>
+<td class="l data">V9</td>
+<th class="l m rowheader" scope="row">Indeksy</th>
+<td class="l data">0</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Utworzono</th>
+<td class="l data">10.06.2020 18:53:52</td>
+<th class="l m rowheader" scope="row">Długość obserwacji</th>
+<td class="l data">200</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Ostatnio zmodyfikowano</th>
+<td class="l data">10.06.2020 18:53:52</td>
+<th class="l m rowheader" scope="row">Usuniętych obserwacji</th>
+<td class="l data">0</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Zabezpieczenie</th>
+<td class="l data">&nbsp;</td>
+<th class="l m rowheader" scope="row">Skompresowany</th>
+<td class="l data">Nie</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Typ zbioru</th>
+<td class="l data">&nbsp;</td>
+<th class="l m rowheader" scope="row">Posortowany</th>
+<td class="l data">Nie</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Etykieta</th>
+<td class="l data">&nbsp;</td>
+<th class="l m rowheader" scope="row">&nbsp;</th>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Reprezentacja danych</th>
+<td class="l data">SOLARIS_X86_64, LINUX_X86_64, ALPHA_TRU64, LINUX_IA64</td>
+<th class="l m rowheader" scope="row">&nbsp;</th>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Kodowanie</th>
+<td class="l data">utf-8  Unicode (UTF-8)</td>
+<th class="l m rowheader" scope="row">&nbsp;</th>
+<td class="l data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX7"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" border="2" bordercolor="#666666" summary="Procedure Contents: Mechanizm/system op.">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" colspan="2" scope="colgroup">Informacje zależne od mechanizmu/platformy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l m rowheader" scope="row">Rozmiar strony zbioru</th>
+<td class="l data">65536</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Liczba stron zbioru</th>
+<td class="l data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Pierwsza strona</th>
+<td class="l data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Maksymalnie obserwacji na stronie</th>
+<td class="l data">327</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Obserwacji na pierwszej stronie</th>
+<td class="l data">70</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Liczba napraw zbioru</th>
+<td class="l data">0</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Nazwa pliku</th>
+<td class="l data">/folders/myfolders/PROJEKT/LIBRARY/pgk_2017.sas7bdat</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Utworzono w dystrybucji</th>
+<td class="l data">9.0401M6</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Utworzono na platformie</th>
+<td class="l data">Linux</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Numer INODE</th>
+<td class="l data">269</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Prawa dostępu</th>
+<td class="l data">rwxrwx---</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Właściciel</th>
+<td class="l data">root</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Rozmiar pliku</th>
+<td class="l data">128KB</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Rozmiar pliku (w bajtach)</th>
+<td class="l data">131072</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX8"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" border="2" bordercolor="#666666" summary="Procedure Contents: Zmienne">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" colspan="7" scope="colgroup">Alfabetyczna lista zmiennych i atrybutów</th>
+</tr>
+<tr>
+<th class="c m header" scope="col">#</th>
+<th class="c m header" scope="col">Zmienna</th>
+<th class="c m header" scope="col">Typ</th>
+<th class="c m header" scope="col">Dł.</th>
+<th class="c m header" scope="col">Format</th>
+<th class="c m header" scope="col">Informat</th>
+<th class="c m header" scope="col">Etykieta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="c m rowheader" scope="row">1</th>
+<td class="l data">A</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">BEST.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">A</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">2</th>
+<td class="l data">B</td>
+<td class="l data">Char</td>
+<td class="r data">114</td>
+<td class="l data">$114.</td>
+<td class="l data">$114.</td>
+<td class="l data">B</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">3</th>
+<td class="l data">C</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">BEST.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">C</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">4</th>
+<td class="l data">D</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">MMDDYY10.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">D</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">5</th>
+<td class="l data">E</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">MMDDYY10.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">E</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">6</th>
+<td class="l data">F</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">COMMA15.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">F</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">7</th>
+<td class="l data">G</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">COMMA15.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">G</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">8</th>
+<td class="l data">H</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">COMMA15.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">H</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">9</th>
+<td class="l data">I</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">COMMA15.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">I</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">10</th>
+<td class="l data">J</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">COMMA15.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">J</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">11</th>
+<td class="l data">K</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">COMMA15.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">K</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<a name="IDX9"></a>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Pierwsze i ostatnie 10 obserwacji z 2017</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" border="2" bordercolor="#666666" summary="Procedure Print: Zbiór WORK.FIRST10_LAST10">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" scope="col">Obs.</th>
+<th class="c m header" scope="col">nobs</th>
+<th class="c m header" scope="col">A</th>
+<th class="c m header" scope="col">B</th>
+<th class="c m header" scope="col">C</th>
+<th class="c m header" scope="col">D</th>
+<th class="c m header" scope="col">E</th>
+<th class="c m header" scope="col">F</th>
+<th class="c m header" scope="col">G</th>
+<th class="c m header" scope="col">H</th>
+<th class="c m header" scope="col">I</th>
+<th class="c m header" scope="col">J</th>
+<th class="c m header" scope="col">K</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="c m rowheader" scope="row">1</th>
+<td class="r data">70</td>
+<td class="r data">1</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA PGK PGE 2015</td>
+<td class="r data">1070031259</td>
+<td class="r data">01/01/2017</td>
+<td class="r data">12/31/2017</td>
+<td class="r data">44,480,032,679</td>
+<td class="r data">.</td>
+<td class="r data">3,271,795,146</td>
+<td class="r data">.</td>
+<td class="r data">3,255,509,810</td>
+<td class="r data">618,546,864</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">2</th>
+<td class="r data">70</td>
+<td class="r data">2</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA PGNIG</td>
+<td class="r data">1080021073</td>
+<td class="r data">01/01/2017</td>
+<td class="r data">12/31/2017</td>
+<td class="r data">41,515,104,257</td>
+<td class="r data">.</td>
+<td class="r data">3,959,412,710</td>
+<td class="r data">.</td>
+<td class="r data">3,947,568,409</td>
+<td class="r data">750,037,998</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">3</th>
+<td class="r data">70</td>
+<td class="r data">3</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA</td>
+<td class="r data">2050004308</td>
+<td class="r data">01/01/2017</td>
+<td class="r data">12/31/2017</td>
+<td class="r data">34,918,328,398</td>
+<td class="r data">.</td>
+<td class="r data">1,404,918,433</td>
+<td class="r data">.</td>
+<td class="r data">1,400,103,065</td>
+<td class="r data">266,019,582</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">4</th>
+<td class="r data">70</td>
+<td class="r data">4</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA PZU</td>
+<td class="r data">1070031851</td>
+<td class="r data">01/01/2017</td>
+<td class="r data">12/31/2017</td>
+<td class="r data">27,698,239,149</td>
+<td class="r data">.</td>
+<td class="r data">2,834,333,729</td>
+<td class="r data">.</td>
+<td class="r data">2,815,826,215</td>
+<td class="r data">534,920,429</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">5</th>
+<td class="r data">70</td>
+<td class="r data">5</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA KGHM</td>
+<td class="r data">1010007524</td>
+<td class="r data">01/01/2017</td>
+<td class="r data">12/31/2017</td>
+<td class="r data">23,488,392,903</td>
+<td class="r data">.</td>
+<td class="r data">3,773,965,973</td>
+<td class="r data">.</td>
+<td class="r data">3,799,135,989</td>
+<td class="r data">719,826,126</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">6</th>
+<td class="r data">70</td>
+<td class="r data">6</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA ENEA</td>
+<td class="r data">2090002971</td>
+<td class="r data">01/01/2017</td>
+<td class="r data">12/31/2017</td>
+<td class="r data">19,365,360,160</td>
+<td class="r data">.</td>
+<td class="r data">907,961,182</td>
+<td class="r data">.</td>
+<td class="r data">899,019,607</td>
+<td class="r data">170,813,725</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">7</th>
+<td class="r data">70</td>
+<td class="r data">7</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA ENERGA</td>
+<td class="r data">2040004755</td>
+<td class="r data">01/01/2017</td>
+<td class="r data">12/31/2017</td>
+<td class="r data">14,001,758,391</td>
+<td class="r data">.</td>
+<td class="r data">551,703,817</td>
+<td class="r data">.</td>
+<td class="r data">499,272,700</td>
+<td class="r data">94,861,813</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">8</th>
+<td class="r data">70</td>
+<td class="r data">8</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA BANK MILLENNIUM SPÓŁKA AKCYJNA</td>
+<td class="r data">1080021156</td>
+<td class="r data">01/01/2017</td>
+<td class="r data">12/31/2017</td>
+<td class="r data">7,593,751,067</td>
+<td class="r data">.</td>
+<td class="r data">1,383,895,249</td>
+<td class="r data">.</td>
+<td class="r data">1,384,356,302</td>
+<td class="r data">262,841,898</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">9</th>
+<td class="r data">70</td>
+<td class="r data">9</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA IDEA BANK SA</td>
+<td class="r data">1080021050</td>
+<td class="r data">01/01/2017</td>
+<td class="r data">12/31/2017</td>
+<td class="r data">6,133,554,145</td>
+<td class="r data">.</td>
+<td class="r data">77,457,599</td>
+<td class="r data">.</td>
+<td class="r data">90,121,467</td>
+<td class="r data">17,115,308</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">10</th>
+<td class="r data">70</td>
+<td class="r data">10</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA LEROY MERLIN POLSKA</td>
+<td class="r data">1080009741</td>
+<td class="r data">01/01/2017</td>
+<td class="r data">12/31/2017</td>
+<td class="r data">5,954,508,185</td>
+<td class="r data">.</td>
+<td class="r data">209,945,865</td>
+<td class="r data">.</td>
+<td class="r data">209,940,007</td>
+<td class="r data">39,888,601</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">11</th>
+<td class="r data">70</td>
+<td class="r data">61</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA DESA UNICUM</td>
+<td class="r data">1070034708</td>
+<td class="r data">01/01/2017</td>
+<td class="r data">12/31/2017</td>
+<td class="r data">32,964,173</td>
+<td class="r data">.</td>
+<td class="r data">10,140,673</td>
+<td class="r data">.</td>
+<td class="r data">10,140,673</td>
+<td class="r data">1,926,728</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">12</th>
+<td class="r data">70</td>
+<td class="r data">62</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA ACE SPV 1</td>
+<td class="r data">1070036601</td>
+<td class="r data">01/01/2017</td>
+<td class="r data">12/29/2017</td>
+<td class="r data">22,958,119</td>
+<td class="r data">.</td>
+<td class="r data">6,447,995</td>
+<td class="r data">.</td>
+<td class="r data">6,447,995</td>
+<td class="r data">1,225,119</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">13</th>
+<td class="r data">70</td>
+<td class="r data">63</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA CALLAGHAN</td>
+<td class="r data">1080020582</td>
+<td class="r data">07/01/2016</td>
+<td class="r data">12/31/2017</td>
+<td class="r data">19,408,581</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">1,990,018</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">14</th>
+<td class="r data">70</td>
+<td class="r data">64</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA H+H</td>
+<td class="r data">1080019716</td>
+<td class="r data">01/01/2017</td>
+<td class="r data">01/31/2017</td>
+<td class="r data">15,246,957</td>
+<td class="r data">.</td>
+<td class="r data">50,750</td>
+<td class="r data">.</td>
+<td class="r data">50,750</td>
+<td class="r data">9,643</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">15</th>
+<td class="r data">70</td>
+<td class="r data">65</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA VIRTU</td>
+<td class="r data">2050004981</td>
+<td class="r data">04/01/2017</td>
+<td class="r data">04/30/2017</td>
+<td class="r data">10,132,591</td>
+<td class="r data">.</td>
+<td class="r data">653,037</td>
+<td class="r data">.</td>
+<td class="r data">650,857</td>
+<td class="r data">123,663</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">16</th>
+<td class="r data">70</td>
+<td class="r data">66</td>
+<td class="l data">MAKRUM PROJECT MANAGEMENT SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ PODATKOWA GRUPA KAPITAŁOWA</td>
+<td class="r data">1020001115</td>
+<td class="r data">01/01/2017</td>
+<td class="r data">03/31/2017</td>
+<td class="r data">2,993,924</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">1,783,313</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">17</th>
+<td class="r data">70</td>
+<td class="r data">67</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA</td>
+<td class="r data">1070017420</td>
+<td class="r data">01/01/2017</td>
+<td class="r data">01/15/2017</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">18</th>
+<td class="r data">70</td>
+<td class="r data">68</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA GETIN LEASING S.A.</td>
+<td class="r data">1010008156</td>
+<td class="r data">01/01/2017</td>
+<td class="r data">08/31/2017</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">339,165,222</td>
+<td class="r data">.</td>
+<td class="r data">339,165,222</td>
+<td class="r data">64,441,392</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">19</th>
+<td class="r data">70</td>
+<td class="r data">69</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA-PŁATNIK KRAKOWSKI HOLDING KOMUNALNY SPÓŁKA AKCYJNA</td>
+<td class="r data">6792584444</td>
+<td class="r data">01/01/2017</td>
+<td class="r data">12/31/2017</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">170,914,377</td>
+<td class="r data">.</td>
+<td class="r data">170,746,377</td>
+<td class="r data">32,441,812</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">20</th>
+<td class="r data">70</td>
+<td class="r data">70</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA BISNODE</td>
+<td class="r data">1080022629</td>
+<td class="r data">01/01/2017</td>
+<td class="r data">12/31/2017</td>
+<td class="r data">50,741,354</td>
+<td class="r data">.</td>
+<td class="r data">3,283,932</td>
+<td class="r data">.</td>
+<td class="r data">3,283,932</td>
+<td class="r data">623,947</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<a name="IDX10"></a>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Badanie ilości braków danych względem wszystkich obserwacji z 2017</td>
+</tr>
+</table><br>
+<div class="c proctitle">Procedura MEANS</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" border="2" bordercolor="#666666" summary="Procedure Means: Statystyki sumaryczne">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" scope="col">Zmienna</th>
+<th class="c m header" scope="col">Etykieta</th>
+<th class="c m header" scope="col">N</th>
+<th class="c m header" scope="col">N braków</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">A</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">C</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">D</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">E</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">F</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">G</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">H</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">I</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">J</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">K</th>
+</tr>
+</table></th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">A</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">C</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">D</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">E</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">F</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">G</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">H</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">I</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">J</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">K</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">70</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">70</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">70</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">70</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">68</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">1</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">65</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">5</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">70</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">70</td>
+</tr>
+</table></td>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">2</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">69</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">5</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">65</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0</td>
+</tr>
+</table></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<a name="IDX11"></a>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Sprawdzenie ilości braków danych względem wszystkich obserwacji z 2017</td>
+</tr>
+</table><br>
+<div class="c proctitle">Procedura MEANS</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" border="2" bordercolor="#666666" summary="Procedure Means: Statystyki sumaryczne">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" scope="col">Zmienna</th>
+<th class="c m header" scope="col">Etykieta</th>
+<th class="c m header" scope="col">N</th>
+<th class="c m header" scope="col">N braków</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">LP</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">NIP</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">POCZATEK_OKRESU</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">KONIEC_OKRESU</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">PRZYCHODY</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">KOSZTY_PRZYCHODU</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">DOCHOD</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">STRATA</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">PODSTAWA_OPODATKOWANIA</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">PODATEK_NALEZNY</th>
+</tr>
+</table></th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">A</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">C</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">D</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">E</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">F</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">G</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">H</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">I</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">J</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">K</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">70</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">70</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">70</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">70</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">70</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">70</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">70</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">70</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">70</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">70</td>
+</tr>
+</table></td>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0</td>
+</tr>
+</table></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<a name="IDX12"></a>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Wstępne zbadanie zbioru PGK_2018xlsx</td>
+</tr>
+</table><br>
+<div class="c proctitle">Procedura CONTENTS</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" border="2" bordercolor="#666666" summary="Procedure Contents: Atrybuty">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l m rowheader" scope="row">Nazwa zbioru</th>
+<td class="l data">PROJEKT.PGK_2018</td>
+<th class="l m rowheader" scope="row">Obserwacje</th>
+<td class="l data">66</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Typ elementu</th>
+<td class="l data">DATA</td>
+<th class="l m rowheader" scope="row">Zmienne</th>
+<td class="l data">19</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Mechanizm</th>
+<td class="l data">V9</td>
+<th class="l m rowheader" scope="row">Indeksy</th>
+<td class="l data">0</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Utworzono</th>
+<td class="l data">10.06.2020 18:53:53</td>
+<th class="l m rowheader" scope="row">Długość obserwacji</th>
+<td class="l data">264</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Ostatnio zmodyfikowano</th>
+<td class="l data">10.06.2020 18:53:53</td>
+<th class="l m rowheader" scope="row">Usuniętych obserwacji</th>
+<td class="l data">0</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Zabezpieczenie</th>
+<td class="l data">&nbsp;</td>
+<th class="l m rowheader" scope="row">Skompresowany</th>
+<td class="l data">Nie</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Typ zbioru</th>
+<td class="l data">&nbsp;</td>
+<th class="l m rowheader" scope="row">Posortowany</th>
+<td class="l data">Nie</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Etykieta</th>
+<td class="l data">&nbsp;</td>
+<th class="l m rowheader" scope="row">&nbsp;</th>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Reprezentacja danych</th>
+<td class="l data">SOLARIS_X86_64, LINUX_X86_64, ALPHA_TRU64, LINUX_IA64</td>
+<th class="l m rowheader" scope="row">&nbsp;</th>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Kodowanie</th>
+<td class="l data">utf-8  Unicode (UTF-8)</td>
+<th class="l m rowheader" scope="row">&nbsp;</th>
+<td class="l data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX13"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" border="2" bordercolor="#666666" summary="Procedure Contents: Mechanizm/system op.">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" colspan="2" scope="colgroup">Informacje zależne od mechanizmu/platformy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l m rowheader" scope="row">Rozmiar strony zbioru</th>
+<td class="l data">65536</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Liczba stron zbioru</th>
+<td class="l data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Pierwsza strona</th>
+<td class="l data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Maksymalnie obserwacji na stronie</th>
+<td class="l data">247</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Obserwacji na pierwszej stronie</th>
+<td class="l data">66</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Liczba napraw zbioru</th>
+<td class="l data">0</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Nazwa pliku</th>
+<td class="l data">/folders/myfolders/PROJEKT/LIBRARY/pgk_2018.sas7bdat</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Utworzono w dystrybucji</th>
+<td class="l data">9.0401M6</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Utworzono na platformie</th>
+<td class="l data">Linux</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Numer INODE</th>
+<td class="l data">271</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Prawa dostępu</th>
+<td class="l data">rwxrwx---</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Właściciel</th>
+<td class="l data">root</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Rozmiar pliku</th>
+<td class="l data">128KB</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">Rozmiar pliku (w bajtach)</th>
+<td class="l data">131072</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX14"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" border="2" bordercolor="#666666" summary="Procedure Contents: Zmienne">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" colspan="7" scope="colgroup">Alfabetyczna lista zmiennych i atrybutów</th>
+</tr>
+<tr>
+<th class="c m header" scope="col">#</th>
+<th class="c m header" scope="col">Zmienna</th>
+<th class="c m header" scope="col">Typ</th>
+<th class="c m header" scope="col">Dł.</th>
+<th class="c m header" scope="col">Format</th>
+<th class="c m header" scope="col">Informat</th>
+<th class="c m header" scope="col">Etykieta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="c m rowheader" scope="row">1</th>
+<td class="l data">A</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">BEST.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">A</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">2</th>
+<td class="l data">B</td>
+<td class="l data">Char</td>
+<td class="r data">114</td>
+<td class="l data">$114.</td>
+<td class="l data">$114.</td>
+<td class="l data">B</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">3</th>
+<td class="l data">C</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">BEST.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">C</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">4</th>
+<td class="l data">D</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">MMDDYY10.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">D</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">5</th>
+<td class="l data">E</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">MMDDYY10.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">E</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">6</th>
+<td class="l data">F</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">COMMA15.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">F</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">7</th>
+<td class="l data">G</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">COMMA15.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">G</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">8</th>
+<td class="l data">H</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">COMMA15.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">H</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">9</th>
+<td class="l data">I</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">COMMA15.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">I</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">10</th>
+<td class="l data">J</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">COMMA15.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">J</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">11</th>
+<td class="l data">K</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">COMMA15.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">K</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">12</th>
+<td class="l data">L</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">COMMA15.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">L</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">13</th>
+<td class="l data">M</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">COMMA15.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">M</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">14</th>
+<td class="l data">N</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">COMMA15.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">N</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">15</th>
+<td class="l data">O</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">COMMA15.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">O</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">16</th>
+<td class="l data">P</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">COMMA15.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">P</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">17</th>
+<td class="l data">Q</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">COMMA15.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">Q</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">18</th>
+<td class="l data">R</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">COMMA15.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">R</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">19</th>
+<td class="l data">S</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">COMMA15.</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">S</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<a name="IDX15"></a>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Wyświetlenie pierwszych i ostatnich 10 obserwacji z 2018</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" border="2" bordercolor="#666666" summary="Procedure Print: Zbiór WORK.FIRST10_LAST10">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" scope="col">Obs.</th>
+<th class="c m header" scope="col">nobs</th>
+<th class="c m header" scope="col">A</th>
+<th class="c m header" scope="col">B</th>
+<th class="c m header" scope="col">C</th>
+<th class="c m header" scope="col">D</th>
+<th class="c m header" scope="col">E</th>
+<th class="c m header" scope="col">F</th>
+<th class="c m header" scope="col">G</th>
+<th class="c m header" scope="col">H</th>
+<th class="c m header" scope="col">I</th>
+<th class="c m header" scope="col">J</th>
+<th class="c m header" scope="col">K</th>
+<th class="c m header" scope="col">L</th>
+<th class="c m header" scope="col">M</th>
+<th class="c m header" scope="col">N</th>
+<th class="c m header" scope="col">O</th>
+<th class="c m header" scope="col">P</th>
+<th class="c m header" scope="col">Q</th>
+<th class="c m header" scope="col">R</th>
+<th class="c m header" scope="col">S</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="c m rowheader" scope="row">1</th>
+<td class="r data">66</td>
+<td class="r data">1</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA PGK PGE 2015</td>
+<td class="r data">1070031259</td>
+<td class="r data">01/01/2018</td>
+<td class="r data">12/31/2018</td>
+<td class="r data">46,379,036,519</td>
+<td class="r data">434,027,432</td>
+<td class="r data">45,945,009,087</td>
+<td class="r data">44,695,095,886</td>
+<td class="r data">116,140,160</td>
+<td class="r data">44,578,955,726</td>
+<td class="r data">1,683,940,633</td>
+<td class="r data">317,887,272</td>
+<td class="r data">1,366,053,360</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">1,649,717,980</td>
+<td class="r data">313,446,416</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">2</th>
+<td class="r data">66</td>
+<td class="r data">2</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA PGNIG</td>
+<td class="r data">1080021073</td>
+<td class="r data">01/01/2018</td>
+<td class="r data">12/31/2018</td>
+<td class="r data">45,951,200,056</td>
+<td class="r data">929,895,652</td>
+<td class="r data">45,021,304,404</td>
+<td class="r data">42,120,123,182</td>
+<td class="r data">904,789,530</td>
+<td class="r data">41,215,333,652</td>
+<td class="r data">3,838,740,574</td>
+<td class="r data">25,106,122</td>
+<td class="r data">3,813,634,452</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">3,800,823,943</td>
+<td class="r data">722,156,549</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">3</th>
+<td class="r data">66</td>
+<td class="r data">3</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA</td>
+<td class="r data">2050005147</td>
+<td class="r data">01/01/2018</td>
+<td class="r data">12/31/2018</td>
+<td class="r data">37,788,280,284</td>
+<td class="r data">1,325,969,610</td>
+<td class="r data">36,462,310,674</td>
+<td class="r data">36,038,014,889</td>
+<td class="r data">1,099,351,470</td>
+<td class="r data">34,938,663,419</td>
+<td class="r data">1,653,719,320</td>
+<td class="r data">226,618,140</td>
+<td class="r data">1,427,101,181</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">1,645,974,219</td>
+<td class="r data">312,735,102</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">4</th>
+<td class="r data">66</td>
+<td class="r data">4</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA ENEA</td>
+<td class="r data">2090002971</td>
+<td class="r data">01/01/2018</td>
+<td class="r data">12/31/2018</td>
+<td class="r data">26,868,857,965</td>
+<td class="r data">977,148,681</td>
+<td class="r data">25,891,709,284</td>
+<td class="r data">26,382,497,670</td>
+<td class="r data">927,503,751</td>
+<td class="r data">25,454,993,919</td>
+<td class="r data">486,360,295</td>
+<td class="r data">49,644,930</td>
+<td class="r data">436,715,365</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">481,177,795</td>
+<td class="r data">91,423,781</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">5</th>
+<td class="r data">66</td>
+<td class="r data">5</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA PZU</td>
+<td class="r data">1070039812</td>
+<td class="r data">01/01/2018</td>
+<td class="r data">12/31/2018</td>
+<td class="r data">26,554,689,232</td>
+<td class="r data">22,000,000</td>
+<td class="r data">26,532,689,232</td>
+<td class="r data">22,828,686,371</td>
+<td class="r data">21,983,040</td>
+<td class="r data">22,806,703,331</td>
+<td class="r data">3,725,844,589</td>
+<td class="r data">16,960</td>
+<td class="r data">3,725,827,629</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">3,701,256,236</td>
+<td class="r data">703,222,650</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">6</th>
+<td class="r data">66</td>
+<td class="r data">6</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA KGHM</td>
+<td class="r data">1010007524</td>
+<td class="r data">01/01/2018</td>
+<td class="r data">12/31/2018</td>
+<td class="r data">22,687,823,733</td>
+<td class="r data">0</td>
+<td class="r data">22,687,823,733</td>
+<td class="r data">19,305,793,131</td>
+<td class="r data">45,000</td>
+<td class="r data">19,305,748,131</td>
+<td class="r data">3,323,501,967</td>
+<td class="r data">.</td>
+<td class="r data">3,323,501,967</td>
+<td class="r data">45,000</td>
+<td class="r data">45,000</td>
+<td class="r data">.</td>
+<td class="r data">3,356,456,033</td>
+<td class="r data">636,761,646</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">7</th>
+<td class="r data">66</td>
+<td class="r data">7</td>
+<td class="l data">PGK ENERGA 2018</td>
+<td class="r data">2040005418</td>
+<td class="r data">01/01/2018</td>
+<td class="r data">12/31/2018</td>
+<td class="r data">14,771,655,366</td>
+<td class="r data">277,182,219</td>
+<td class="r data">14,494,473,147</td>
+<td class="r data">13,924,006,891</td>
+<td class="r data">468,049,612</td>
+<td class="r data">13,455,957,278</td>
+<td class="r data">1,038,515,869</td>
+<td class="r data">.</td>
+<td class="r data">1,038,515,869</td>
+<td class="r data">190,867,393</td>
+<td class="r data">190,867,393</td>
+<td class="r data">.</td>
+<td class="r data">1,028,395,001</td>
+<td class="r data">195,395,050</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">8</th>
+<td class="r data">66</td>
+<td class="r data">8</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA BANK MILLENNIUM SPÓŁKA AKCYJNA</td>
+<td class="r data">1080021156</td>
+<td class="r data">01/01/2018</td>
+<td class="r data">12/31/2018</td>
+<td class="r data">7,535,765,930</td>
+<td class="r data">2,206,312</td>
+<td class="r data">7,533,559,618</td>
+<td class="r data">6,132,127,745</td>
+<td class="r data">0</td>
+<td class="r data">6,132,127,745</td>
+<td class="r data">1,348,824,316</td>
+<td class="r data">1,925,542</td>
+<td class="r data">1,346,898,774</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">1,349,282,534</td>
+<td class="r data">256,182,026</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">9</th>
+<td class="r data">66</td>
+<td class="r data">9</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA LEROY MERLIN POLSKA</td>
+<td class="r data">1080009741</td>
+<td class="r data">01/01/2018</td>
+<td class="r data">12/31/2018</td>
+<td class="r data">6,539,443,240</td>
+<td class="r data">0</td>
+<td class="r data">6,539,443,240</td>
+<td class="r data">6,251,096,442</td>
+<td class="r data">0</td>
+<td class="r data">6,251,096,442</td>
+<td class="r data">288,346,798</td>
+<td class="r data">.</td>
+<td class="r data">288,346,798</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">288,343,798</td>
+<td class="r data">54,785,322</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">10</th>
+<td class="r data">66</td>
+<td class="r data">10</td>
+<td class="l data">PKP CARGO PODATKOWA GRUPA KAPITAŁOWA</td>
+<td class="r data">1070037339</td>
+<td class="r data">01/01/2018</td>
+<td class="r data">12/31/2018</td>
+<td class="r data">5,700,356,872</td>
+<td class="r data">24,430,748</td>
+<td class="r data">5,675,926,124</td>
+<td class="r data">5,354,054,190</td>
+<td class="r data">6,429,737</td>
+<td class="r data">5,347,624,454</td>
+<td class="r data">346,188,646</td>
+<td class="r data">18,001,011</td>
+<td class="r data">328,187,635</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">345,802,979</td>
+<td class="r data">65,702,566</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">11</th>
+<td class="r data">66</td>
+<td class="r data">57</td>
+<td class="l data">REGIONALNE CENTRUM GOSPODARKI WODNO-ŚCIEKOWEJ SPÓŁKA AKCYJNA</td>
+<td class="r data">2060002937</td>
+<td class="r data">01/01/2018</td>
+<td class="r data">12/31/2018</td>
+<td class="r data">71,384,768</td>
+<td class="r data">756,791</td>
+<td class="r data">70,627,978</td>
+<td class="r data">65,170,580</td>
+<td class="r data">0</td>
+<td class="r data">65,170,580</td>
+<td class="r data">5,457,399</td>
+<td class="r data">.</td>
+<td class="r data">5,457,399</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">5,096,099</td>
+<td class="r data">968,259</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">12</th>
+<td class="r data">66</td>
+<td class="r data">58</td>
+<td class="l data">PGK BURIETTA</td>
+<td class="r data">2060003055</td>
+<td class="r data">04/01/2018</td>
+<td class="r data">12/31/2018</td>
+<td class="r data">69,189,107</td>
+<td class="r data">0</td>
+<td class="r data">69,189,107</td>
+<td class="r data">64,562,988</td>
+<td class="r data">0</td>
+<td class="r data">64,562,988</td>
+<td class="r data">4,626,119</td>
+<td class="r data">.</td>
+<td class="r data">4,626,119</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">4,626,119</td>
+<td class="r data">878,963</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">13</th>
+<td class="r data">66</td>
+<td class="r data">59</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA</td>
+<td class="r data">2090004390</td>
+<td class="r data">07/01/2018</td>
+<td class="r data">10/01/2018</td>
+<td class="r data">63,392,526</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">1,483,648</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">14</th>
+<td class="r data">66</td>
+<td class="r data">60</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA CGFP 2018</td>
+<td class="r data">1020001368</td>
+<td class="r data">01/01/2018</td>
+<td class="r data">12/31/2018</td>
+<td class="r data">60,352,980</td>
+<td class="r data">0</td>
+<td class="r data">60,352,980</td>
+<td class="r data">61,032,981</td>
+<td class="r data">0</td>
+<td class="r data">61,032,981</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">680,001</td>
+<td class="r data">0</td>
+<td class="r data">680,001</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">15</th>
+<td class="r data">66</td>
+<td class="r data">61</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA BISNODE</td>
+<td class="r data">1080022629</td>
+<td class="r data">01/01/2018</td>
+<td class="r data">12/31/2018</td>
+<td class="r data">57,515,034</td>
+<td class="r data">0</td>
+<td class="r data">57,515,034</td>
+<td class="r data">50,381,302</td>
+<td class="r data">0</td>
+<td class="r data">50,381,302</td>
+<td class="r data">7,133,731</td>
+<td class="r data">.</td>
+<td class="r data">7,133,731</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">7,133,731</td>
+<td class="r data">1,355,409</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">16</th>
+<td class="r data">66</td>
+<td class="r data">62</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA BIOSYSTEM</td>
+<td class="r data">6793097858</td>
+<td class="r data">04/01/2017</td>
+<td class="r data">03/31/2018</td>
+<td class="r data">52,555,248</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">10,666,984</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">10,666,984</td>
+<td class="r data">2,026,727</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">17</th>
+<td class="r data">66</td>
+<td class="r data">63</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA WOMAK</td>
+<td class="r data">1010008512</td>
+<td class="r data">01/01/2018</td>
+<td class="r data">12/31/2018</td>
+<td class="r data">42,892,803</td>
+<td class="r data">0</td>
+<td class="r data">42,892,803</td>
+<td class="r data">39,904,948</td>
+<td class="r data">0</td>
+<td class="r data">39,904,948</td>
+<td class="r data">2,987,856</td>
+<td class="r data">.</td>
+<td class="r data">2,987,856</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">.</td>
+<td class="r data">2,987,856</td>
+<td class="r data">567,693</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">18</th>
+<td class="r data">66</td>
+<td class="r data">64</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA DESA UNICUM</td>
+<td class="r data">1070034708</td>
+<td class="r data">01/01/2018</td>
+<td class="r data">12/31/2018</td>
+<td class="r data">41,567,681</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">7,114,728</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">7,114,728</td>
+<td class="r data">1,351,798</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">19</th>
+<td class="r data">66</td>
+<td class="r data">65</td>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA GEST-POL SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ</td>
+<td class="r data">3010000026</td>
+<td class="r data">01/01/2018</td>
+<td class="r data">12/31/2018</td>
+<td class="r data">38,203,288</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">6,623,927</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">6,623,927</td>
+<td class="r data">1,258,546</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">20</th>
+<td class="r data">66</td>
+<td class="r data">66</td>
+<td class="l data">OPERA GRUPA KAPITAŁOWA</td>
+<td class="r data">1070033198</td>
+<td class="r data">07/01/2017</td>
+<td class="r data">06/30/2018</td>
+<td class="r data">27,427,202</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">5,273,676</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">5,273,676</td>
+<td class="r data">1,001,998</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<a name="IDX16"></a>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Badanie ilości braków danych względem wszystkich obserwacji z 2018</td>
+</tr>
+</table><br>
+<div class="c proctitle">Procedura MEANS</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" border="2" bordercolor="#666666" summary="Procedure Means: Statystyki sumaryczne">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" scope="col">Zmienna</th>
+<th class="c m header" scope="col">Etykieta</th>
+<th class="c m header" scope="col">N</th>
+<th class="c m header" scope="col">N braków</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">A</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">C</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">D</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">E</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">F</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">G</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">H</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">I</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">J</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">K</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">L</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">M</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">N</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">O</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">P</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">Q</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">R</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">S</th>
+</tr>
+</table></th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">A</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">C</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">D</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">E</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">F</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">G</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">H</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">I</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">J</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">K</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">L</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">M</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">N</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">O</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">P</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">Q</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">R</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">S</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">66</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">66</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">66</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">66</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">66</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">46</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">46</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">48</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">46</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">46</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">65</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">12</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">45</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">47</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">34</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">1</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">66</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">66</td>
+</tr>
+</table></td>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">20</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">20</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">18</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">20</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">20</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">1</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">54</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">21</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">19</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">32</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">65</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0</td>
+</tr>
+</table></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<a name="IDX17"></a>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Sprawdzenie ilości braków danych względem wszystkich obserwacji z 2018</td>
+</tr>
+</table><br>
+<div class="c proctitle">Procedura MEANS</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" border="2" bordercolor="#666666" summary="Procedure Means: Statystyki sumaryczne">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" scope="col">Zmienna</th>
+<th class="c m header" scope="col">Etykieta</th>
+<th class="c m header" scope="col">N</th>
+<th class="c m header" scope="col">N braków</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">LP</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">NIP</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">POCZATEK_OKRESU</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">KONIEC_OKRESU</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">PRZYCHODY</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">PRZYCHODY_KAPITAL</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">PRZYCHODY_INNE</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">KOSZTY_PRZYCHODU</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">KOSZTY_KAPITAL</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">KOSZTY_INNE</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">DOCHOD</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">DOCHOD_KAPITAL</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">DOCHOD_INNE</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">STRATA</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">STRATA_KAPITAL</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">STRATA_INNE</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">PODSTAWA_OPODATKOWANIA</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">PODATEK_NALEZNY</th>
+</tr>
+</table></th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">A</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">C</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">D</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">E</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">F</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">G</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">H</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">I</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">J</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">K</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">L</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">M</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">N</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">O</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">P</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">Q</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">R</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">S</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">66</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">66</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">66</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">66</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">66</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">66</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">66</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">66</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">66</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">66</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">66</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">66</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">66</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">66</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">66</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">66</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">66</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">66</td>
+</tr>
+</table></td>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0</td>
+</tr>
+</table></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">Zbiory zostały zaimportowane i przygotowane do analizy.</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">W pierwszym kroku spróbujemy dowiedzieć się, które spółki występują w zeznaniach więcej niż raz.</td>
+</tr>
+</table>
+<div class="branch">
+<a name="IDX18"></a>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Częstość występowania spółek w zeznaniach podatkowych</td>
+</tr>
+</table><br>
+<div class="c proctitle">Procedura FREQ</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" border="2" bordercolor="#666666" summary="Procedure Freq: Jednoczynnikowe liczebności">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" colspan="2" scope="colgroup">B</th>
+</tr>
+<tr>
+<th class="l m header" scope="col">PODATNIK</th>
+<th class="r m header" scope="col">Liczebność</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l m rowheader" scope="row">&quot;PGK GPW&quot;</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">&quot;PGK NEOMEDIC&quot;</th>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">&quot;PODATKOWA GRUPA KAPITAŁOWA ONET&quot;</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">HARTBEX PODATKOWA GRUPA KAPITAŁOWA</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">MAKRUM PROJECT MANAGEMENT SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ PODATKOWA GRUPA KAPITAŁOWA</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">MCI PODATKOWA GRUPA KAPITAŁOWA</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">OPERA GRUPA KAPITAŁOWA</th>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PEM PODATKOWA GRUPA KAPITAŁOWA</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PGK BURIETTA</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PGK CELSIUM PODATKOWA GRUPA KAPITAŁOWA</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PGK DK ENERGY</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PGK ENERGA 2018</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PGK GÓRAŻDŻE</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PGK PKP ENERGETYKA</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PGK TRANS POLONIA</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PKP CARGO LOGISTICS - PODATKOWA GRUPA KAPITAŁOWA</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PKP CARGO PODATKOWA GRUPA KAPITAŁOWA</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA</th>
+<td class="r data">7</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA &quot;JANTAR&quot; SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ</th>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA - BANK MILLENNIUM SPÓŁKA AKCYJNA</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA - PŁATNIK - VOXEL SPÓŁKA AKCYJNA</th>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA - PŁATNIK REMONDIS POŁUDNIE SP. Z O.O.</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA -PŁATNIK- BYTOM SPÓŁKA AKCYJNA</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA ABB</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA ACE SPV 1</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA ADAMED</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA AGORA</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA AUCHAN</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA BANK MILLENNIUM SPÓŁKA AKCYJNA</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA BERLING</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA BIOSYSTEM</th>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA BISNODE</th>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA CALLAGHAN</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA CEZ POLSKA</th>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA CGFP 2018</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA CHARLEMAGNE</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA CITATION</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA CONSTANTIA</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA CYMBELINE</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA DESA UNICUM</th>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA DESIGN</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA DOTCARD</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA DUHABEX</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA ENEA</th>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA ENERGA</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA ESV</th>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA EUROZET</th>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA EWE</th>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA FASHION HOUSE GDAŃSK</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA FASHION HOUSE SOSNOWIEC</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA FASHION HOUSE WARSZAWA</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA FORTUM</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA FRESENIUS</th>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA GDAŃSKIE PRZEDSIĘBIORSTWO ENERGETYKI CIEPLNEJ</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA GEST-POL SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ</th>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA GETIN LEASING S.A.</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA GIEŁDY PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA GIEŁDY PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE SPÓŁKA AKCYJNA</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA GRUPA STALMOT</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA H+H</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA IDEA BANK S.A.</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA IDEA BANK SA</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA IGLOTECH</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA IKEA</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA INNOGY</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA INTERNATIONAL PAPER-KWIDZYN SP. Z O.O. INTERNATIONAL PAPER (POLAND) HOLDING SP. Z O.O.</th>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA INVESTMENT FUND MANAGERS S.A.</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA KGHM</th>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA KURKUS HOLDING SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ</th>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA LEROY MERLIN POLSKA</th>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA LISNER</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA LMI</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA LOUVRE HOTELS GROUP</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA LUBELSKI WĘGIEL BOGDANKA</th>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA MAK</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA MATERIAŁY BUDOWLANE</th>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA MK</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA MULTI - FORM II</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA OLX</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA OPEN FINANCE S. A.</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA ORBIS</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA PGK PGE 2015</th>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA PGNIG</th>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA PGO</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA PRIME CAR MANAGEMENT</th>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA PZU</th>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA QUBUS HOTEL POLSKA</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA SANWIL HOLDING</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA STALMOT &amp; WOLMET SPÓŁKA AKCYJNA</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA TOWARZYSTWO UBEZPIECZEŃ I REASEKURACJI &quot;WARTA&quot;</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA UNILINK</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA URW</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA VEOLIA</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA VEOLIA TERM</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA VIRTU</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA WOLTERS KLUWER</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA WOMAK</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA, PŁATNIK GRUPY PFLEIDERER GRAJEWO S.A.</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA, PŁATNIK GRUPY PFLEIDERER POLSKA SP. Z O.O.</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA-PŁATNIK ELTEL NETWORKS POLAND SPÓŁKA AKCYJNA</th>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">PODATKOWA GRUPA KAPITAŁOWA-PŁATNIK KRAKOWSKI HOLDING KOMUNALNY SPÓŁKA AKCYJNA</th>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">REGIONALNE CENTRUM GOSPODARKI WODNO-ŚCIEKOWEJ SPÓŁKA AKCYJNA</th>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="l m rowheader" scope="row">ZAKŁADY FARMACEUTYCZNE POLPHARMA SPÓŁKA AKCYJNA PODATKOWA GRUPA KAPITAŁOWA</th>
+<td class="r data">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+</div>
+<div class="branch">
+<a name="IDX19"></a>
+<div>
+<div  class="c">
+<img alt="Procedura SGPLOT" src="SGPlot11.png" style=" height: 480px; width: 640px;" border="0" class="c">
+</div>
+</div>
+<br>
+</div>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">Poznaliśmy spis spółek wraz z ich liczbą występowania w zeznaniach.</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">Widoczne jest, że największą ilość zajmują spółki występujące jednokrotnie</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">Są to spółki które składały zeznania jednorazowo, możliwe że wcześniejsze zostały dokonane drogą papierową</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">Teraz spojrzymy na spółki występujące najmniej dwukrotnie.</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">To właśnie te spółki prawdopodobnie są wiarogodnymi podatnikami, utrzymują ciągłość w zeznaniach podatkowych</td>
+</tr>
+</table>
+<div class="branch">
+<a name="IDX20"></a>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Najczęstsze spółki</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" border="2" bordercolor="#666666" summary="Procedure Print: Zbiór PROJEKT.CZESTE_SPOLKI_INFO">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" scope="col">Obs.</th>
+<th class="c m header" scope="col">PODATNIK</th>
+<th class="c m header" scope="col">CZESTOSC</th>
+<th class="c m header" scope="col">NIP</th>
+<th class="c m header" scope="col">PODATEK_NALEZNY</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="c m rowheader" scope="row">1</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA ESV</td>
+<td class="r data">3</td>
+<td class="r data">1010007234</td>
+<td class="r data">1,777,706</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">2</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA KGHM</td>
+<td class="r data">3</td>
+<td class="r data">1010007524</td>
+<td class="r data">636,761,646</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">3</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA, PŁATNIK GRUPY PFLEIDERER POLSKA SP. Z O.O.</td>
+<td class="r data">2</td>
+<td class="r data">1010008328</td>
+<td class="r data">4,425,632</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">4</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA FORTUM</td>
+<td class="r data">2</td>
+<td class="r data">1010008392</td>
+<td class="r data">12,015,895</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">5</th>
+<td class="l data">MAKRUM PROJECT MANAGEMENT SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ PODATKOWA GRUPA KAPITAŁOWA</td>
+<td class="r data">2</td>
+<td class="r data">1020001115</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">6</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA KURKUS HOLDING SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ</td>
+<td class="r data">3</td>
+<td class="r data">1020001204</td>
+<td class="r data">11,706,132</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">7</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA LUBELSKI WĘGIEL BOGDANKA</td>
+<td class="r data">3</td>
+<td class="r data">1030000927</td>
+<td class="r data">2,622,601</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">8</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA ADAMED</td>
+<td class="r data">2</td>
+<td class="r data">1050002295</td>
+<td class="r data">14,133,278</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">9</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA - PŁATNIK REMONDIS POŁUDNIE SP. Z O.O.</td>
+<td class="r data">2</td>
+<td class="r data">1060004195</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">10</th>
+<td class="l data">&quot;PODATKOWA GRUPA KAPITAŁOWA ONET&quot;</td>
+<td class="r data">2</td>
+<td class="r data">1060004491</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">11</th>
+<td class="l data">&quot;PGK NEOMEDIC&quot;</td>
+<td class="r data">3</td>
+<td class="r data">1060005295</td>
+<td class="r data">3,688,671</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">12</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA - PŁATNIK - VOXEL SPÓŁKA AKCYJNA</td>
+<td class="r data">3</td>
+<td class="r data">1060005332</td>
+<td class="r data">4,361,946</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">13</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA CONSTANTIA</td>
+<td class="r data">2</td>
+<td class="r data">1060006337</td>
+<td class="r data">11,813,256</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">14</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA-PŁATNIK KRAKOWSKI HOLDING KOMUNALNY SPÓŁKA AKCYJNA</td>
+<td class="r data">3</td>
+<td class="r data">1060006604</td>
+<td class="r data">26,185,626</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">15</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA EUROZET</td>
+<td class="r data">3</td>
+<td class="r data">1070021746</td>
+<td class="r data">8,155,207</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">16</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA BERLING</td>
+<td class="r data">2</td>
+<td class="r data">1070023886</td>
+<td class="r data">1,191,086</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">17</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA MATERIAŁY BUDOWLANE</td>
+<td class="r data">3</td>
+<td class="r data">1070029127</td>
+<td class="r data">44,159,952</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">18</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA PGK PGE 2015</td>
+<td class="r data">3</td>
+<td class="r data">1070031259</td>
+<td class="r data">313,446,416</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">19</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA PZU</td>
+<td class="r data">3</td>
+<td class="r data">1070031851</td>
+<td class="r data">534,920,429</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">20</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA CEZ POLSKA</td>
+<td class="r data">3</td>
+<td class="r data">1070032827</td>
+<td class="r data">23,148,492</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">21</th>
+<td class="l data">OPERA GRUPA KAPITAŁOWA</td>
+<td class="r data">3</td>
+<td class="r data">1070033198</td>
+<td class="r data">1,001,998</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">22</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA DESA UNICUM</td>
+<td class="r data">3</td>
+<td class="r data">1070034708</td>
+<td class="r data">1,351,798</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">23</th>
+<td class="l data">PEM PODATKOWA GRUPA KAPITAŁOWA</td>
+<td class="r data">2</td>
+<td class="r data">1070036127</td>
+<td class="r data">5,220,167</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">24</th>
+<td class="l data">MCI PODATKOWA GRUPA KAPITAŁOWA</td>
+<td class="r data">2</td>
+<td class="r data">1070036392</td>
+<td class="r data">1,987,998</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">25</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA ACE SPV 1</td>
+<td class="r data">2</td>
+<td class="r data">1070036601</td>
+<td class="r data">1,225,119</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">26</th>
+<td class="l data">PGK PKP ENERGETYKA</td>
+<td class="r data">2</td>
+<td class="r data">1070036920</td>
+<td class="r data">47,539,737</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">27</th>
+<td class="l data">PGK DK ENERGY</td>
+<td class="r data">2</td>
+<td class="r data">1070037322</td>
+<td class="r data">1,967,887</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">28</th>
+<td class="l data">PKP CARGO PODATKOWA GRUPA KAPITAŁOWA</td>
+<td class="r data">2</td>
+<td class="r data">1070037339</td>
+<td class="r data">65,702,566</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">29</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA EUROZET</td>
+<td class="r data">3</td>
+<td class="r data">1070037351</td>
+<td class="r data">10,307,560</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">30</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA GIEŁDY PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE</td>
+<td class="r data">2</td>
+<td class="r data">1070037374</td>
+<td class="r data">31,210,827</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">31</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA LOUVRE HOTELS GROUP</td>
+<td class="r data">2</td>
+<td class="r data">1070037977</td>
+<td class="r data">5,463,840</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">32</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA PZU</td>
+<td class="r data">3</td>
+<td class="r data">1070039812</td>
+<td class="r data">703,222,650</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">33</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA LEROY MERLIN POLSKA</td>
+<td class="r data">3</td>
+<td class="r data">1080009741</td>
+<td class="r data">54,785,322</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">34</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA WOLTERS KLUWER</td>
+<td class="r data">2</td>
+<td class="r data">1080016824</td>
+<td class="r data">2,927,072</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">35</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA FASHION HOUSE WARSZAWA</td>
+<td class="r data">2</td>
+<td class="r data">1080017315</td>
+<td class="r data">4,534,383</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">36</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA FASHION HOUSE GDAŃSK</td>
+<td class="r data">2</td>
+<td class="r data">1080017321</td>
+<td class="r data">9,407,074</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">37</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA FASHION HOUSE SOSNOWIEC</td>
+<td class="r data">2</td>
+<td class="r data">1080017338</td>
+<td class="r data">6,732,877</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">38</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA PGNIG</td>
+<td class="r data">3</td>
+<td class="r data">1080017456</td>
+<td class="r data">703,932,378</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">39</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA H+H</td>
+<td class="r data">2</td>
+<td class="r data">1080019716</td>
+<td class="r data">9,643</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">40</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA MAK</td>
+<td class="r data">2</td>
+<td class="r data">1080019739</td>
+<td class="r data">925,570</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">41</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA-PŁATNIK ELTEL NETWORKS POLAND SPÓŁKA AKCYJNA</td>
+<td class="r data">2</td>
+<td class="r data">1080020116</td>
+<td class="r data">818,257</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">42</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA VEOLIA</td>
+<td class="r data">2</td>
+<td class="r data">1080021038</td>
+<td class="r data">47,746,214</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">43</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA PGNIG</td>
+<td class="r data">3</td>
+<td class="r data">1080021073</td>
+<td class="r data">722,156,549</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">44</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA BANK MILLENNIUM SPÓŁKA AKCYJNA</td>
+<td class="r data">2</td>
+<td class="r data">1080021156</td>
+<td class="r data">256,182,026</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">45</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA BISNODE</td>
+<td class="r data">3</td>
+<td class="r data">1080022629</td>
+<td class="r data">1,355,409</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">46</th>
+<td class="l data">PGK TRANS POLONIA</td>
+<td class="r data">2</td>
+<td class="r data">1090003987</td>
+<td class="r data">3,223,192</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">47</th>
+<td class="l data">PGK GÓRAŻDŻE</td>
+<td class="r data">2</td>
+<td class="r data">2010001031</td>
+<td class="r data">65,557,682</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">48</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA DESIGN</td>
+<td class="r data">2</td>
+<td class="r data">2010001083</td>
+<td class="r data">691,184</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">49</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA INTERNATIONAL PAPER-KWIDZYN SP. Z O.O. INTERNATIONAL PAPER (POLAND) HOLDING SP. Z O.O.</td>
+<td class="r data">3</td>
+<td class="r data">2040002934</td>
+<td class="r data">55,340,589</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">50</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA &quot;JANTAR&quot; SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ</td>
+<td class="r data">3</td>
+<td class="r data">2040004092</td>
+<td class="r data">2,406,285</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">51</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA ENERGA</td>
+<td class="r data">2</td>
+<td class="r data">2040004755</td>
+<td class="r data">94,861,813</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">52</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA PRIME CAR MANAGEMENT</td>
+<td class="r data">3</td>
+<td class="r data">2040004933</td>
+<td class="r data">10,814,276</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">53</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA GDAŃSKIE PRZEDSIĘBIORSTWO ENERGETYKI CIEPLNEJ</td>
+<td class="r data">2</td>
+<td class="r data">2040005192</td>
+<td class="r data">5,997,608</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">54</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA PGO</td>
+<td class="r data">2</td>
+<td class="r data">2050004515</td>
+<td class="r data">665,493</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">55</th>
+<td class="l data">&quot;PGK GPW&quot;</td>
+<td class="r data">2</td>
+<td class="r data">2050004857</td>
+<td class="r data">8,214,530</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">56</th>
+<td class="l data">REGIONALNE CENTRUM GOSPODARKI WODNO-ŚCIEKOWEJ SPÓŁKA AKCYJNA</td>
+<td class="r data">3</td>
+<td class="r data">2060002446</td>
+<td class="r data">887,335</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">57</th>
+<td class="l data">REGIONALNE CENTRUM GOSPODARKI WODNO-ŚCIEKOWEJ SPÓŁKA AKCYJNA</td>
+<td class="r data">3</td>
+<td class="r data">2060002937</td>
+<td class="r data">968,259</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">58</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA GRUPA STALMOT</td>
+<td class="r data">2</td>
+<td class="r data">2080000781</td>
+<td class="r data">6,322,233</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">59</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA ENEA</td>
+<td class="r data">3</td>
+<td class="r data">2090002971</td>
+<td class="r data">91,423,781</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">60</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA FRESENIUS</td>
+<td class="r data">3</td>
+<td class="r data">2090002988</td>
+<td class="r data">8,189,878</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">61</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA LISNER</td>
+<td class="r data">2</td>
+<td class="r data">2090003456</td>
+<td class="r data">4,487,353</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">62</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA EWE</td>
+<td class="r data">3</td>
+<td class="r data">2090003918</td>
+<td class="r data">2,179,873</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">63</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA GEST-POL SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ</td>
+<td class="r data">3</td>
+<td class="r data">3010000026</td>
+<td class="r data">1,258,546</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">64</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA-PŁATNIK KRAKOWSKI HOLDING KOMUNALNY SPÓŁKA AKCYJNA</td>
+<td class="r data">3</td>
+<td class="r data">6792584444</td>
+<td class="r data">32,441,812</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">65</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA BIOSYSTEM</td>
+<td class="r data">3</td>
+<td class="r data">6793097858</td>
+<td class="r data">2,026,727</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<a name="IDX21"></a>
+<div>
+<div  class="c">
+<img alt="Procedura SGPLOT" src="SGPlot12.png" style=" height: 480px; width: 640px;" border="0" class="c">
+</div>
+</div>
+<br>
+</div>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">Widzimy pełny wykaz spółek występujących najmniej dwukrotnie.</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">Ze względu na wyższą wiarygodność tych spółek będziemy się nimi zajmować w dalszej analizie</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">Zajmiemy się rozłożeniem wysokości kwot podatku należnego - w zależności od częstości występowania grup.</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">Dodatkowo zwizualizujemy procentowe rozłożenie kwot przychodów, dochodów i strat w ogólnych przedziałach.</td>
+</tr>
+</table>
+<div class="branch">
+<a name="IDX22"></a>
+<div>
+<div  class="c">
+<img alt="Procedura SGPLOT" src="SGPlot13.png" style=" height: 480px; width: 640px;" border="0" class="c">
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<a name="IDX23"></a>
+<div>
+<div  class="c">
+<img alt="Procedura SGPLOT" src="SGPlot14.png" style=" height: 480px; width: 640px;" border="0" class="c">
+</div>
+</div>
+<br>
+</div>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">Jak widzimy, grupy, które występują dwukrotnie w zeznaniach plasują się w najniższych przedziałach kwotowych podatku należnego</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">Natomiast grupy występujący najczęściej plasują się w najwyższych kwotach</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">Potwierdza to nasze założenie o wiarygodności</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">To właśnie te spółki w największym stopniu dokładają się do budżetu Państwa</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">Ciekawie się przedstawia drugi histogram, z niego możemy odczytać, że pomimo olbrzymich przychodów</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">dochody plasują się podobnej pozycji. Oznacza to, że przy wysokich przychodach, są również wysokie straty - koszty uzyskania przychodu</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">Teraz przejdziemy do badania najwyższego i najniższego dochodu w poszczególnych latach</td>
+</tr>
+</table>
+<div class="branch">
+<a name="IDX24"></a>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Minimalne 3 spółki względem: dochod w roku: 2016</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" border="2" bordercolor="#666666" summary="Procedure Print: Zbiór PROJEKT.TOP3_DOCHOD2016">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" scope="col">Obs.</th>
+<th class="c m header" scope="col">PODATNIK</th>
+<th class="c m header" scope="col">DOCHOD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="c m rowheader" scope="row">1</th>
+<td class="l data">MAKRUM PROJECT MANAGEMENT SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ PODATKOWA GRUPA KAPITAŁOWA</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">2</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA-PŁATNIK ELTEL NETWORKS POLAND SPÓŁKA AKCYJNA</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">3</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA H+H</td>
+<td class="r data">221,766</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<a name="IDX25"></a>
+<div>
+<div  class="c">
+<img alt="Procedura SGPLOT" src="SGPlot15.png" style=" height: 480px; width: 640px;" border="0" class="c">
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<a name="IDX26"></a>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Maksymalne 3 spółki względem: dochod w roku: 2016</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" border="2" bordercolor="#666666" summary="Procedure Print: Zbiór PROJEKT.LAST3_DOCHOD2016">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" scope="col">Obs.</th>
+<th class="c m header" scope="col">PODATNIK</th>
+<th class="c m header" scope="col">DOCHOD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="c m rowheader" scope="row">1</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA PZU</td>
+<td class="r data">2,669,597,489</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">2</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA PGNIG</td>
+<td class="r data">3,710,313,745</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">3</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA KGHM</td>
+<td class="r data">3,865,011,606</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<a name="IDX27"></a>
+<div>
+<div  class="c">
+<img alt="Procedura SGPLOT" src="SGPlot16.png" style=" height: 480px; width: 640px;" border="0" class="c">
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<a name="IDX28"></a>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Minimalne 3 spółki względem: dochod w roku: 2017</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" border="2" bordercolor="#666666" summary="Procedure Print: Zbiór PROJEKT.TOP3_DOCHOD2017">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" scope="col">Obs.</th>
+<th class="c m header" scope="col">PODATNIK</th>
+<th class="c m header" scope="col">DOCHOD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="c m rowheader" scope="row">1</th>
+<td class="l data">&quot;PODATKOWA GRUPA KAPITAŁOWA ONET&quot;</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">2</th>
+<td class="l data">MAKRUM PROJECT MANAGEMENT SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ PODATKOWA GRUPA KAPITAŁOWA</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">3</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA - PŁATNIK REMONDIS POŁUDNIE SP. Z O.O.</td>
+<td class="r data">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<a name="IDX29"></a>
+<div>
+<div  class="c">
+<img alt="Procedura SGPLOT" src="SGPlot17.png" style=" height: 480px; width: 640px;" border="0" class="c">
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<a name="IDX30"></a>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Maksymalne 3 spółki względem: dochod w roku: 2017</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" border="2" bordercolor="#666666" summary="Procedure Print: Zbiór PROJEKT.LAST3_DOCHOD2017">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" scope="col">Obs.</th>
+<th class="c m header" scope="col">PODATNIK</th>
+<th class="c m header" scope="col">DOCHOD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="c m rowheader" scope="row">1</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA PGK PGE 2015</td>
+<td class="r data">3,271,795,146</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">2</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA KGHM</td>
+<td class="r data">3,773,965,973</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">3</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA PGNIG</td>
+<td class="r data">3,959,412,710</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<a name="IDX31"></a>
+<div>
+<div  class="c">
+<img alt="Procedura SGPLOT" src="SGPlot18.png" style=" height: 480px; width: 640px;" border="0" class="c">
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<a name="IDX32"></a>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Minimalne 3 spółki względem: dochod w roku: 2018</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" border="2" bordercolor="#666666" summary="Procedure Print: Zbiór PROJEKT.TOP3_DOCHOD2018">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" scope="col">Obs.</th>
+<th class="c m header" scope="col">PODATNIK</th>
+<th class="c m header" scope="col">DOCHOD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="c m rowheader" scope="row">1</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA DESIGN</td>
+<td class="r data">3,751,806</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">2</th>
+<td class="l data">OPERA GRUPA KAPITAŁOWA</td>
+<td class="r data">5,273,676</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">3</th>
+<td class="l data">REGIONALNE CENTRUM GOSPODARKI WODNO-ŚCIEKOWEJ SPÓŁKA AKCYJNA</td>
+<td class="r data">5,457,399</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<a name="IDX33"></a>
+<div>
+<div  class="c">
+<img alt="Procedura SGPLOT" src="SGPlot19.png" style=" height: 480px; width: 640px;" border="0" class="c">
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<a name="IDX34"></a>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Maksymalne 3 spółki względem: dochod w roku: 2018</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" border="2" bordercolor="#666666" summary="Procedure Print: Zbiór PROJEKT.LAST3_DOCHOD2018">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" scope="col">Obs.</th>
+<th class="c m header" scope="col">PODATNIK</th>
+<th class="c m header" scope="col">DOCHOD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="c m rowheader" scope="row">1</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA KGHM</td>
+<td class="r data">3,323,501,967</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">2</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA PZU</td>
+<td class="r data">3,725,844,589</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">3</th>
+<td class="l data">PODATKOWA GRUPA KAPITAŁOWA PGNIG</td>
+<td class="r data">3,838,740,574</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<a name="IDX35"></a>
+<div>
+<div  class="c">
+<img alt="Procedura SGPLOT" src="SGPlot20.png" style=" height: 480px; width: 640px;" border="0" class="c">
+</div>
+</div>
+<br>
+</div>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">Możemy tutaj dostrzec pewną zależność, a mianowicie</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">Mamy 3 najczęstsze spółki, które w każdym roku utrzymują się w top 3 wysokości przychodów</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">Są to: PODATKOWA GRUPA KAPITAŁOWA PGNIG (3 razy), PODATKOWA GRUPA KAPITAŁOWA KGHM (3 razy), PODATKOWA GRUPA KAPITAŁOWA PZU (2 razy)</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">Z pewnością świadczy to o dobrym zarządzaniu finansami w tych firmach i potęgą jaką za sobą kryją</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">Innym tematem projektu mogłoby być dogłębniejsze zbadanie tych spółek</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">Jeżeli chodzi o dochody minimalne to zachodzi tutaj duża różnorodność - ciężko wysunąć jakieś konkretne wnioski</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">Teraz zbadamy sobie strukturę przychodu, dochodu i strat w latach 2016-2018</td>
+</tr>
+</table>
+<div class="branch">
+<a name="IDX36"></a>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Dane szczegółowe odnośnie poszczególnych czynników w danych latach dla wszystkich spółek</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" border="2" bordercolor="#666666" summary="Procedure Print: Zbiór PROJEKT.SREDNIE_DANE_T">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" scope="col">Obs.</th>
+<th class="c m header" scope="col">NAZWA</th>
+<th class="c m header" scope="col">MIN</th>
+<th class="c m header" scope="col">MAX</th>
+<th class="c m header" scope="col">MEAN</th>
+<th class="c m header" scope="col">STD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="c m rowheader" scope="row">1</th>
+<td class="l data">Przychody_2016</td>
+<td class="r data">0</td>
+<td class="r data">44,983,078,713</td>
+<td class="r data">4,193,162,448</td>
+<td class="r data">10,221,961,623</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">2</th>
+<td class="l data">Dochod_2016</td>
+<td class="r data">0</td>
+<td class="r data">3,865,011,606</td>
+<td class="r data">356,573,004</td>
+<td class="r data">920,572,834</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">3</th>
+<td class="l data">Strata_2016</td>
+<td class="r data">0</td>
+<td class="r data">2,968,620</td>
+<td class="r data">96,949</td>
+<td class="r data">477,827</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">4</th>
+<td class="l data">Przychody_2017</td>
+<td class="r data">0</td>
+<td class="r data">44,480,032,679</td>
+<td class="r data">3,676,039,958</td>
+<td class="r data">9,167,767,848</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">5</th>
+<td class="l data">Dochod_2017</td>
+<td class="r data">0</td>
+<td class="r data">3,959,412,710</td>
+<td class="r data">329,283,261</td>
+<td class="r data">880,525,010</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">6</th>
+<td class="l data">Strata_2017</td>
+<td class="r data">0</td>
+<td class="r data">18,031,387</td>
+<td class="r data">330,245</td>
+<td class="r data">2,335,313</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">7</th>
+<td class="l data">Przychody_2018</td>
+<td class="r data">38,203,288</td>
+<td class="r data">46,379,036,519</td>
+<td class="r data">5,263,416,958</td>
+<td class="r data">11,618,680,794</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">8</th>
+<td class="l data">Dochod_2018</td>
+<td class="r data">3,751,806</td>
+<td class="r data">3,838,740,574</td>
+<td class="r data">431,346,817</td>
+<td class="r data">983,532,332</td>
+</tr>
+<tr>
+<th class="c m rowheader" scope="row">9</th>
+<td class="l data">Strata_2018</td>
+<td class="r data">0</td>
+<td class="r data">129,318,377</td>
+<td class="r data">4,701,670</td>
+<td class="r data">20,861,029</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">Dużą różnorodność możemy zauważyć w przychodach, dlatego spróbujemy sobie to zwizualizować</td>
+</tr>
+</table>
+<div class="branch">
+<a name="IDX37"></a>
+<div>
+<div  class="c">
+<img alt="Procedura SGPLOT" src="SGPlot21.png" style=" height: 480px; width: 640px;" border="0" class="c">
+</div>
+</div>
+<br>
+</div>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">Możemy tutaj dostrzec wzrost w 2018 roku względem 2017, powodem tego może być wzrost inflacji</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">Podobną wizualizację możemy wykonać dla dochodów oraz strat</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">Podsumowując, odpowiedzieliśmy sobie na 5 postawionych pytań</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">1) Mamy pełną listę grup kapitałowych występujących częściej niż raz w tych latach - dzięki temu możemy przeprowadzać badania na wiarygodnych podatnikach</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">2) Widzimy, że największy podatek dochodowy płacą spółki występujące najczęściej - to one w dużym stopniu zasilają budżet państwa</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">3) Dochody zajmują procentowo podobny udział nawet mimo olbrzymich przychodów - świadczy to o proporcjonalnym wzroście kosztów przychodów</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">4) Zbadaliśmy sprawę dla dochodów, możemy uruchomić makro dodatkowe dla strat czy przychodów. Są to 3 spółki (PGNIG, KGHM, PZU)</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">5) Mamy ukazane dane szczegółowe w raporcie, dodatkowo wykonaliśmy ich wizualizację.</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">Autor projektu: Szymon Pawłowski</td>
+</tr>
+</table>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext">W przyszłości możliwe rozszerzenie</td>
+</tr>
+</table>
+</body>
+</html>
